@@ -109,7 +109,7 @@ if (isset($_POST['submit'])) {
     } else {
         // Tampilkan Pesan Error
         display_login_form();
-        echo '<p>Username Atau Password Tidak Benar</p>';
+        echo "<script> alert('Username Atau Password Tidak Benar')</script>";
     }
 }    
 else { 
