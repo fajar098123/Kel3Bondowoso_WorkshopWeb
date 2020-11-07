@@ -32,7 +32,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Form Mahasiswa</h2>
-                    <form action="target.php" method="POST">
+                    <form action="index.php" method="POST">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -102,7 +102,8 @@
                             </div>
                         </div>
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit" >Submit</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                            <button onclick="window.location.href='target.php'" class="btn btn--radius-2 btn--blue">Lihat Tabel</button>
                         </div>
                     </form>
                 </div>
