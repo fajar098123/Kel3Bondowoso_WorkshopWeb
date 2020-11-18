@@ -1,0 +1,120 @@
+/* Navbar */
+.nav-link {
+    color: #4f2610 !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/coffee-banner.jpg);
+    background-size: cover;
+    height: 450px;
+}
+
+.jumbotron {
+    padding-top: 90px;
+    text-align: center;
+}
+
+.jumbotron .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+}
+.jumbotron .display-4{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.jumbotron .display-4, .lead {
+    color: white;
+}
+.lead {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* Utility */
+.tombol {
+    border-radius: 40px;
+    background-color: rgb(19, 19, 19);
+    border: 2px solid white;
+    margin: auto;
+}
+.tombol:hover {
+    background-color: #4f2610;
+    border: 2px solid white;
+}
+.footer {
+    background-color: #4f2610;
+    padding:10px !important;
+}
+.footer-text {
+    color: white;
+}
+
+/* Card */
+.card-group {
+    padding: 20px !important;
+    border-radius: 10px !important;
+}
+
+.card {
+    margin: 30px;
+    padding: 30px !important;
+}
+.card-body {
+    padding: 10px;
+}
+
+/* Float Button */
+.float{
+	position:fixed;
+	width:150px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:	#00af9c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+a:hover {
+    text-decoration: none !important;
+}
+.my-float{
+	margin-top:18px;
+}
+.my-float:hover{
+    color: white;
+}
+.link-footer, .link-footer:hover {
+    color: white;
+}
+/* DEKSTOP VER */
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .nav-link:hover {
+        border-bottom: 3px solid #4f2610;
+        margin-bottom: -3px;
+    }
+    .navbar-brand {
+        font-size: 28px;
+    }
+    .jumbotron .display-4{
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .lead {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .jumbotron {
+        padding-top: 120px;
+    }
+    .card-text {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+}
