@@ -70,23 +70,59 @@
 
     <!-- Card -->
     <div class="container">
-    <div class="card-group shadow p-3 mb-5 bg-white rounded">
-        <div class="card p-3 mb-5 bg-white border rounded" style="width: 18rem;">
-        <img src="img/arabika.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Arabika</p>
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="img/arabika.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Arabika</h5>
+                    <p class="card-text">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
+                </div>
             </div>
         </div>
-        <div class="card p-3 mb-5 bg-white border rounded" style="width: 18rem;">
-        <img src="img/robusta.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Robusta</p>
-            </div>    
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="img/robusta.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Robusta</h5>
+                    <p class="card-text">Robusta sering digambarkan sebagai kopi yang pahit atau tajam dengan karakter rasa seperti kayu dan karet. Pahit atau bitter ini berasal dari kandungan kafein yang lebih tinggi pada Robusta</p>
+                </div>
+            </div>
         </div>
-        <div class="card p-3 mb-5 bg-white border rounded" style="width: 18rem;">
-        <img src="img/jamaika.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Jamaika</p>
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="img/toraja.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toraja</h5>
+                    <p class="card-text">Kopi Toraja adalah jenis kopi Arabica yang disebut “queen of coffe”. Cirinya adalah kopi ini memiliki aroma khas seperti aroma tanah. Rasa pahitnya menonjol.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="img/liberika.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Liberika</h5>
+                    <p class="card-text">Kopi liberika memiliki karekteristik khas dan otentik yang dapat membuat para pecinta kopi rindu akan citarasanya.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="img/jamaika.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jamaika</h5>
+                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100">
+                <img src="img/excelsa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Excelsa</h5>
+                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -144,7 +180,7 @@
             <hr>
             <!--Quotation-->
             <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Neque cupiditate assumenda in
-            maiores repudiandae mollitia architecto.</p>
+            maiores repudiandae mollitia.</p>
         </div>
         </div>
         <!--Card-->
