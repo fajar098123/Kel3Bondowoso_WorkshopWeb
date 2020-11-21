@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 /* Navbar */
 .nav-link {
     color: #4f2610 !important;
@@ -20,6 +22,7 @@
     padding: 30px;
 }
 .jumbotron .display-4{
+    font-family: 'Courgette', cursive;
     font-size: 28px;
     font-weight: 400;
 }
@@ -117,5 +120,8 @@ a:hover {
     }
     .card-body {
         padding: 10px;
+    }
+    .logo {
+        height: 50px;
     }
 }
