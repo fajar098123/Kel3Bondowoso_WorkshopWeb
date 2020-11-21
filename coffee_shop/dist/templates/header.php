@@ -51,7 +51,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Registrasi
                             </a>
-                            <a class="nav-link collapsed" href="#">
+                            <a class="nav-link collapsed" href="produk.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Produk
                             </a>
