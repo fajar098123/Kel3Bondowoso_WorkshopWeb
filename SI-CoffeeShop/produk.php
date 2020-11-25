@@ -35,16 +35,12 @@
             Hulu
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Farming</a>
+            <a class="dropdown-item" href="#">Processing</a>
+            <a class="dropdown-item" href="#">Roasting</a>
         </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Hilir
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Hilir</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Kontak</a>
@@ -63,9 +59,9 @@
     <div class="card-body">
     <h5 class="card-title"><p><u>PRODUK</u></p></h5>
     <div class="text-left">
-    <form action="#" method="get">
-	  <select name='Jenis Kopi'>
-      <option value='jenis'>Jenis Kopi</option>
+    <form>
+      Jenis Kopi :   
+	  <select>
 		<option value='arabika'>Arabika</option>
 		<option value='robusta'>Robusta</option>
         <option value='toraja'>Toraja</option>
