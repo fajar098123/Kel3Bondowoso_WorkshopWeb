@@ -14,52 +14,15 @@
     <title>Naray Coffee | Coffee Shop</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <a class="navbar-brand" href="#"><img src="img/logo1.png" class="logo" alt="..."></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="index.php">Beranda <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="produk.php">Produk</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Hulu
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Farming</a>
-            <a class="dropdown-item" href="#">Processing</a>
-            <a class="dropdown-item" href="#">Roasting</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Hilir</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Kontak</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Tentang Kami</a>
-        </li>
-        </ul>
-    </div>
-    </div>
-    </nav>
-    <!-- end Navbar -->
-
+    <?php
+    include_once 'navbar.php';
+    ?>
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Selamat Datang Di Naray’s Coffee</h1>
             <p class="lead">Kopi Asli dari Kabupaten Bondowoso yang merupakan salah satu ikon Kabupaten Bondowoso saat ini.</p>
-            <a href="" class="btn btn-primary tombol">Tentang Kita</a>
+            <a href="" class="btn btn-primary tombol">Tentang Kami</a>
         </div>
     </div>
     <!-- end Jumbotron -->
@@ -91,33 +54,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Toraja</h5>
                     <p class="card-text">Kopi Toraja adalah jenis kopi Arabica yang disebut “queen of coffe”. Cirinya adalah kopi ini memiliki aroma khas seperti aroma tanah. Rasa pahitnya menonjol.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="img/liberika.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Liberika</h5>
-                    <p class="card-text">Kopi liberika memiliki karekteristik khas dan otentik yang dapat membuat para pecinta kopi rindu akan citarasanya.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="img/jamaika.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Jamaika</h5>
-                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="img/excelsa.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Excelsa</h5>
-                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
                 </div>
             </div>
         </div>
@@ -214,18 +150,12 @@
 <!-- Section: Testimonials v.1 -->
 
     <!-- end Card -->
-    <a href="#" class="float"><p class="my-float">Order Via WA</p></a>
-    <!-- Footer -->
-    <footer class="page-footer font-small footer">
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 footer-text">© 2020 Copyright:
-    <a href="#"class="link-footer"> Kelompok Kita</a>
-    </div>
-    <!-- Copyright -->
+    <?php
+    include_once 'orderWA.php';
+    include_once 'footer.php';
+    ?>
 
-    </footer>
-    <!-- Footer -->
 
 
     <!-- Optional JavaScript; choose one of the two! -->

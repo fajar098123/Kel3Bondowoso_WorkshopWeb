@@ -53,11 +53,11 @@
     </div>
     </nav>
     <!-- end Navbar -->
-
+<div class="container">
     <!-- Card -->
     <div class="text-center">
     <div class="card-body">
-    <h5 class="card-title"><p><u>PRODUK</u></p></h5>
+    <h5 class="card-title"><u>PRODUK</u></h5>
     <div class="text-left">
     <form>
       Jenis Kopi :   
@@ -74,11 +74,12 @@
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
       </div> 
+</div>
 </form>
     </div>
     <div class="container">
