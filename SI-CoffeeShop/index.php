@@ -147,10 +147,7 @@
 
     </section>
 </div>
-<!-- Section: Testimonials v.1 -->
-
     <!-- end Card -->
-
     <?php
     include_once 'orderWA.php';
     include_once 'footer.php';

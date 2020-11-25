@@ -14,51 +14,14 @@
     <title>Naray Coffee | Coffee Shop</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <a class="navbar-brand" href="#"><img src="img/logo1.png" class="logo" alt="..."></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="index.php">Beranda <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="produk.php">Produk</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Hulu
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Farming</a>
-            <a class="dropdown-item" href="#">Processing</a>
-            <a class="dropdown-item" href="#">Roasting</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Hilir</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Kontak</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Tentang Kami</a>
-        </li>
-        </ul>
-    </div>
-    </div>
-    </nav>
-    <!-- end Navbar -->
-<div class="container">
+  <?php
+    include_once 'navbar.php';
+    ?>
     <!-- Card -->
-    <div class="text-center">
+    <div class="text-center ">
     <div class="card-body">
     <h5 class="card-title"><u>PRODUK</u></h5>
-    <div class="text-left">
+    <div class="text-left container">
     <form>
       Jenis Kopi :   
 	  <select>
@@ -69,7 +32,7 @@
         <option value='jamaika'>Jamaika</option>
         <option value='excelsa'>Excelsa</option>
 	  </select>
-      <div class="text-right">
+      <div class="text-right container">
     <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
@@ -209,18 +172,10 @@
 <!-- Section: Testimonials v.1 -->
 
     <!-- end Card -->
-    <a href="#" class="float"><p class="my-float">Order Via WA</p></a>
-    <!-- Footer -->
-    <footer class="page-footer font-small footer">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 footer-text">© 2020 Copyright:
-    <a href="#"class="link-footer"> Kelompok Kita</a>
-    </div>
-    <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
+    <?php
+    include_once 'orderWA.php';
+    include_once 'footer.php';
+    ?>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
