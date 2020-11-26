@@ -22,7 +22,7 @@
         <div class="container">
             <h1 class="display-4">Selamat Datang Di Naray’s Coffee</h1>
             <p class="lead">Kopi Asli dari Kabupaten Bondowoso yang merupakan salah satu ikon Kabupaten Bondowoso saat ini.</p>
-            <a href="" class="btn btn-primary tombol">Tentang Kami</a>
+            <a href="Tentang_Kami.php" class="btn btn-primary tombol">Tentang Kami</a>
         </div>
     </div>
     <!-- end Jumbotron -->
