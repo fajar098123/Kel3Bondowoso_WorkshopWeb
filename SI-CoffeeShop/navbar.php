@@ -31,7 +31,7 @@
             <a class="nav-link" href="#">Kontak</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Tentang Kami</a>
+            <a class="nav-link" href="tentang_kami.php">Tentang Kami</a>
         </li>
         </ul>
     </div>
