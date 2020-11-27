@@ -20,12 +20,12 @@
             Hulu
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Farming</a>
-            <a class="dropdown-item" href="#">Processing</a>
-            <a class="dropdown-item" href="#">Roasting</a>
+            <a class="dropdown-item" href="farming.php">Farming</a>
+            <a class="dropdown-item" href="proses.php">Processing</a>
+            <a class="dropdown-item" href="roasting.php">Roasting</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Hilir</a>
+        <a class="nav-link" href="hilir.php">Hilir</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Kontak</a>

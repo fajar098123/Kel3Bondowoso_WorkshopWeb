@@ -124,4 +124,48 @@ a:hover {
     .logo {
         height: 50px;
     }
+    .view_item img{
+        width: 350px;
+    }
+    .view_main{
+        background: #FFF;
+        border-radius: 3px;
+        padding: 15px;
+    }
+    .list-view .view_item{
+        border: 1px solid #e2efe1;
+        margin: 10px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+    }
+    .list-view .view_item:last-child{
+        margin-bottom: 0;
+    }
+    .list-view .view_item .vi_left{
+        margin-right: 25px;
+    }
+    .view_item .title{
+        font-weight:600;
+    }
+    .view_item .content{
+        margin: 5px 0;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 200;
+    }
+    .view_item .btn{
+        width: 125px;
+        background: #4f2610;
+        color: #FFF;
+        border-radius: 3px;
+        padding: 8px 5px;
+        text-align: center;
+        font-weight: 200;
+        cursor: pointer;
+        line-height: 20px;      
+    }
+    .view_item .btn:hover{
+        background: #bc5e00;
+    }
 }
