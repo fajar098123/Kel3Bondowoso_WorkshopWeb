@@ -4,7 +4,9 @@
 .nav-link {
     color: #4f2610 !important;
 }
-
+.navbar-brand img {
+    height: 50px !important;
+}
 /* Jumbotron */
 .jumbotron {
     background-image: url(img/coffee-banner.jpg);
@@ -91,9 +93,6 @@ a:hover {
         border-bottom: 3px solid #4f2610;
         margin-bottom: -3px;
     }
-    .navbar-brand {
-        font-size: 28px;
-    }
     .jumbotron .display-4{
         font-size: 50px;
         font-weight: 400;
@@ -120,9 +119,6 @@ a:hover {
     }
     .card-body {
         padding: 10px;
-    }
-    .logo {
-        height: 50px;
     }
     .view_item img{
         width: 350px;
