@@ -80,7 +80,7 @@
         <div class="card-up info-color"></div>
         <!--Avatar-->
         <div class="avatar mx-auto white">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="mt-3 rounded-circle img-fluid">
         </div>
         <div class="card-body">
             <!--Name-->
@@ -104,7 +104,7 @@
         </div>
         <!--Avatar-->
         <div class="avatar mx-auto white">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="mt-3 rounded-circle img-fluid">
         </div>
         <div class="card-body">
             <!--Name-->
@@ -127,7 +127,7 @@
         <div class="card-up indigo"></div>
         <!--Avatar-->
         <div class="avatar mx-auto white">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle img-fluid">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="mt-3 rounded-circle img-fluid">
         </div>
         <div class="card-body">
             <!--Name-->

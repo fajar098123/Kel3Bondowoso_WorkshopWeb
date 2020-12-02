@@ -54,7 +54,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Arabika</h5>
                     <p class="card-text">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
         </div> 
@@ -66,7 +66,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Robusta</h5>
                     <p class="card-text">Robusta sering digambarkan sebagai kopi yang pahit atau tajam dengan karakter rasa seperti kayu dan karet. Pahit atau bitter ini berasal dari kandungan kafein yang lebih tinggi pada Robusta</p>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -78,7 +78,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Toraja</h5>
                     <p class="card-text">Kopi Toraja adalah jenis kopi Arabica yang disebut “queen of coffe”. Cirinya adalah kopi ini memiliki aroma khas seperti aroma tanah. Rasa pahitnya menonjol.</p>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -90,7 +90,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Liberika</h5>
                     <p class="card-text">Kopi liberika memiliki karekteristik khas dan otentik yang dapat membuat para pecinta kopi rindu akan citarasanya.</p>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -102,7 +102,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Jamaika</h5>
                     <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -114,7 +114,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Excelsa</h5>
                     <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
         </div>

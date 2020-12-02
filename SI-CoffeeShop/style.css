@@ -70,6 +70,10 @@
 	border-radius:50px;
 	text-align:center;
 }
+a {
+    color: white !important;
+}
+
 a:hover {
     text-decoration: none !important;
 }
@@ -82,6 +86,11 @@ a:hover {
 .link-footer, .link-footer:hover {
     color: white;
 }
+.price {
+    color: aqua ;
+}
+
+
 /* DEKSTOP VER */
 @media (min-width: 992px) {
     .nav-link {
