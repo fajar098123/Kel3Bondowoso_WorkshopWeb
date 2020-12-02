@@ -55,7 +55,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Produk
                             </a>
-                            <a class="nav-link collapsed" href="#">
+                            <a class="nav-link collapsed" href="artikel.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Artikel
                             </a>
