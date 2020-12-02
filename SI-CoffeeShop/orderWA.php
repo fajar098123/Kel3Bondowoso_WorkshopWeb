@@ -1,1 +1,1 @@
-<a href="#" class="float"><p class="my-float">Order Via WA</p></a>
+<a href="http://wa.me/6281515640963?text=coba" target="blank" class="float"><p class="my-float">Order Via WA</p></a>

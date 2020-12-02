@@ -13,7 +13,11 @@
 
     <title>Naray Coffee | Coffee Shop</title>
   </head>
+  
   <body>
+    <?php
+    include_once 'navbar.php';
+    ?>
     <!-- Card -->
     <div class="text-center ">
     <div class="card-body">
@@ -33,7 +37,12 @@
 </div>
 <!-- Section: Testimonials v.1 -->
 
-    
+    <!-- end Card -->
+    <?php
+    include_once 'orderWA.php';
+    include_once 'footer.php';
+    ?>
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->
