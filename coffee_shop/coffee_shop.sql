@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Nov 2020 pada 12.58
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.3
+-- Generation Time: Dec 02, 2020 at 09:22 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,30 +25,33 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_artikel`
+-- Table structure for table `tb_artikel`
 --
 
 CREATE TABLE `tb_artikel` (
   `id_artikel` varchar(255) NOT NULL,
-  `nama_artikel` varchar(255) NOT NULL
+  `nama_artikel` varchar(255) NOT NULL,
+  `gambar` blob NOT NULL,
+  `konten` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_login`
+-- Table structure for table `tb_login`
 --
 
 CREATE TABLE `tb_login` (
   `id_user` varchar(255) NOT NULL,
   `nama_user` varchar(255) NOT NULL,
+  `username` varchar(18) NOT NULL,
   `password` varchar(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_produk`
+-- Table structure for table `tb_produk`
 --
 
 CREATE TABLE `tb_produk` (
@@ -66,13 +69,19 @@ CREATE TABLE `tb_produk` (
 --
 
 --
--- Indeks untuk tabel `tb_artikel`
+-- Indexes for table `tb_artikel`
 --
 ALTER TABLE `tb_artikel`
   ADD PRIMARY KEY (`id_artikel`);
 
 --
--- Indeks untuk tabel `tb_produk`
+-- Indexes for table `tb_login`
+--
+ALTER TABLE `tb_login`
+  ADD PRIMARY KEY (`id_user`);
+
+--
+-- Indexes for table `tb_produk`
 --
 ALTER TABLE `tb_produk`
   ADD PRIMARY KEY (`id_kopi`);
