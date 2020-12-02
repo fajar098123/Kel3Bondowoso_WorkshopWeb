@@ -70,10 +70,6 @@
 	border-radius:50px;
 	text-align:center;
 }
-a {
-    color: white !important;
-}
-
 a:hover {
     text-decoration: none !important;
 }
@@ -172,5 +168,9 @@ a:hover {
     }
     .view_item .btn:hover{
         background: #bc5e00;
+    }
+    .img-fluid {
+        height: 300px;
+        width: 300px;
     }
 }
