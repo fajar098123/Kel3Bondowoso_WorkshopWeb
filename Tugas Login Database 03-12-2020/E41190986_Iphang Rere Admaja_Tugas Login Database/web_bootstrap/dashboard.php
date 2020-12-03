@@ -187,7 +187,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Shinta Destira Ayu</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Shinta destira ayu</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
@@ -225,19 +225,6 @@
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
-          <?php
-                  if (isset($_GET['pesan'])) {
-                    $pesan = $_GET['pesan'];
-                    if($pesan == "berhasil") {
-                      ?>
-                      <div class ="alert alert-success">
-                      <strong>Success!</strong> Anda Berhasil login.
-                      </div>
-                      <?php
-                    }
-                  }
-                  ?>
-
           <!-- Content Row -->
           <div class="row">
 

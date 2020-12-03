@@ -21,9 +21,27 @@
 </head>
 
 <body class="bg-gradient-primary">
-
   <div class="container">
+  <?php session_start();
+                  if (isset($_SESSION['alert'])) {
+                    if(isset($_SESSION['alert']['success'])){
+                      ?>
+                      <div class ="alert alert-success">
+                        <?=$_SESSION['alert']['success']?>
+                      </div>
+                      <?php
+                    }else if(isset($_SESSION['alert']['danger'])) {
+                      ?>
+                      <div class ="alert alert-danger">
+                        <?=$_SESSION['alert']['danger']?>
+                      </div>
+                      <?php 
+                    }
 
+                  }
+                  session_unset();
+                  session_destroy();
+                  ?>
     <!-- Outer Row -->
     <div class="row justify-content-center">
 
@@ -39,25 +57,14 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">LOGIN PAGE</h1>
                   </div>
-                  <?php
-                  if (isset($_GET['pesan'])) {
-                    $pesan = $_GET['pesan'];
-                    if($pesan == "gagal") {
-                      ?>
-                      <div class ="alert alert-danger">
-                      <strong>Danger!</strong> Anda Gagal Login. Coba cek Username dan password Anda</div>
-                      <?php
-                    }
-                  }
-                  ?>
-                  <form method="post" action = "login_process.php" class="user">
+                  <form method="post" action = "login_process.php" class="user">  
                     <div class="form-group">
                       <input type="Username" class="form-control form-control-user" id="exampleInputUsername" aria-describedby="UsernameHelp" placeholder="Username"
-                       name="username" required>
+                       name="username">
                     </div>
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password"
-                       name="password" required>
+                       name="password">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -65,7 +72,7 @@
                         <label class="custom-control-label" for="customCheck">Remember Me</label>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-user btn-block" name="submit">Login</button>
+                    <button type="submit" class="btn btn-primary btn-user btn-block" name="aksi" value="masuk">Login</button>
                     <hr>
                     <a href="dashboard.php" class="btn btn-google btn-user btn-block">
                       <i class="fab fa-google fa-fw"></i> Login with Google
