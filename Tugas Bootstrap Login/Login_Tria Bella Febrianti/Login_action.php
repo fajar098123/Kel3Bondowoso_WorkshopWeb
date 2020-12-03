@@ -11,7 +11,7 @@
                 session_start();
                 $_SESSION['user'] = $_POST['user'];
                 $_SESSION['level'] = ($data['level']=="1")?'Admin':'User Biasa';
-                header("Location: dashboard.php");
+                header("Location: web_boostrap");
                 die();
         }else {
             echo "Username atau password salah";
