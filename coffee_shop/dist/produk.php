@@ -1,5 +1,9 @@
 <?php include "templates/header.php"?>
-
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
                 <div id="layoutSidenav_content">
                     <main>
@@ -24,30 +28,62 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="small mb-1" for="jenis_kopi">Jenis Kopi</label>
-                                            <input class="form-control py-4" id="jenis_kopi" type="combobox" placeholder="Masukkan Jenis Kopi" />
+                                            <input class="form-control py-4" id="jenis_kopi" type="text" placeholder="Masukkan Jenis Kopi" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="small mb-1" for="inputUsername">Username</label>
-                                    <input class="form-control py-4" id="inputUsername" type="username" aria-describedby="emailHelp" placeholder="Masukkan Username" />
+                                <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label class="small mb-1" for="nama_kopi">Nama Kopi</label>
+                                    <input class="form-control py-4" id="nama_kopi" type="text" placeholder="Masukkan Nama Kopi" />
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="small mb-1" for="harga">Harga</label>
+                                            <input class="form-control py-4" id="harga" type="text" placeholder="Masukkan Harga" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="small mb-1" for="inputPassword">Password</label>
-                                            <input class="form-control py-4" id="inputPassword" type="password" placeholder="Password" />
+                                            <label class="small mb-1" for="jenis_kemasan">Jenis Kemasan</label>
+                                            <input class="form-control py-4" id="jenis_kemasan" type="text" placeholder="Masukkan Jenis Kemasan" />
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="small mb-1" for="inputConfirmPassword">Masukan Password Ulang</label>
-                                            <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Masukan Password Ulang" />
+                                            <label class="small mb-1" for="jenis_roasting">Jenis Roasting</label>
+                                            <input class="form-control py-4" id="jenis_roasting" type="text" placeholder="Masukkan Jenis Roasting" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="" >Masuk</a></div>
-                                <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="dashboard.php">Kembali</a></div>
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                    <div class="form-group">
+                                            <label class="small mb-1" for="deskripsi">Deskripsi</label>
+                                    </div>
+                                    <div class="card shadow-lg border-0 rounded-lg ">
+                                        <form method="post">
+                                            <textarea id="summernote" name="editordata"></textarea>
+                                        </form>
+                                    </div>
+                                 <script>
+                                       $(document).ready(function() {
+                                        $('#summernote').summernote();
+                                           });
+                                          $('#summernote').summernote({
+                                     lineHeights: ['0.2', '0.3', '0.4', '0.5', '0.6', '0.8', '1.0', '1.2', '1.4', '1.5', '2.0', '3.0']
+                                     });
+                                </script>
+                                 </div>
+                                 </div>
+                            </div>
+                                </div>
+                                <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="" >Input Product</a></div>
+                                <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="dashboard.php">Cancel</a></div>
                             </form>
                         </div>
                     </div>

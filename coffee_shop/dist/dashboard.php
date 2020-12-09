@@ -45,6 +45,6 @@
                                     <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                                 </div>
                             </div>
-                            <br>
-               <?php include 'templates/footer.php' ?>
+
+<?php include 'templates/footer.php' ?>
 </html>
