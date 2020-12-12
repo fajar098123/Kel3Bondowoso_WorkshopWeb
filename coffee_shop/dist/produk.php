@@ -28,7 +28,10 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="small mb-1" for="jenis_kopi">Jenis Kopi</label>
-                                            <input class="form-control py-4" id="jenis_kopi" type="text" placeholder="Masukkan Jenis Kopi" />
+                                            <select class="form-control py-4" id="jenis_kopi" name="jenis_kopi">
+                                            <option value="Arabika" selected>Arabika</option>
+                                            <option value="Robusta">Robusta</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -51,12 +54,6 @@
                                         <div class="form-group">
                                             <label class="small mb-1" for="jenis_kemasan">Jenis Kemasan</label>
                                             <input class="form-control py-4" id="jenis_kemasan" type="text" placeholder="Masukkan Jenis Kemasan" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1" for="jenis_roasting">Jenis Roasting</label>
-                                            <input class="form-control py-4" id="jenis_roasting" type="text" placeholder="Masukkan Jenis Roasting" />
                                         </div>
                                     </div>
                                 </div>
