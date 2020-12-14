@@ -15,7 +15,7 @@
   </head>
   <body>
     <?php
-    include_once 'navbar.php';
+    include_once 'templates/navbar.php';
     ?>
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
@@ -150,7 +150,7 @@
     <!-- end Card -->
     <?php
     include_once 'orderWA.php';
-    include_once 'footer.php';
+    include_once 'templates/footer.php';
     ?>
 
 
