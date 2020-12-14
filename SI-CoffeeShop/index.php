@@ -15,6 +15,7 @@
   </head>
   <body>
     <?php
+    include "config/connection.php";
     include_once 'templates/navbar.php';
     ?>
     <!-- Jumbotron -->
