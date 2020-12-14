@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
 
     <title>Naray Coffee | Coffee Shop</title>
   </head>
   <body>
     <?php
-    include_once 'navbar.php';
+     include "../../config/connection.php";
+    include "../../templates/navbar.php";
+  
     ?>
 <!-- Page Content -->
 <div class="container">
@@ -27,7 +29,7 @@
   <div class="row">
 
     <div class="col-md-6" >
-      <img class="img-fluid" src="img/arabika.jpg" alt="">
+      <img class="img-fluid" src="<?= $_ENV['base_url'] ?>img/arabika.jpg" alt="">
     </div>
 
     <div class="col-md-6">
@@ -52,25 +54,25 @@
 
     <div class="col-md-3 col-sm-6 mb-4">
       <a href="#">
-            <img class="img-fluid" src="img/robusta.jpg" alt="">
+            <img class="img-fluid" src="<?= $_ENV['base_url'] ?>img/robusta.jpg" alt="">
           </a>
     </div>
 
     <div class="col-md-3 col-sm-6 mb-4">
       <a href="#">
-            <img class="img-fluid" src="img/jamaika.jpg" alt="">
+            <img class="img-fluid" src="<?= $_ENV['base_url'] ?>img/jamaika.jpg" alt="">
           </a>
     </div>
 
     <div class="col-md-3 col-sm-6 mb-4">
       <a href="#">
-            <img class="img-fluid" src="img/excelsa.jpg" alt="">
+            <img class="img-fluid" src="<?= $_ENV['base_url'] ?>img/excelsa.jpg" alt="">
           </a>
     </div>
 
     <div class="col-md-3 col-sm-6 mb-4">
       <a href="#">
-            <img class="img-fluid" src="img/liberika.jpg" alt="">
+            <img class="img-fluid" src="<?= $_ENV['base_url'] ?>img/liberika.jpg" alt="">
           </a>
     </div>
 
@@ -80,8 +82,8 @@
 </div>
 <!-- /.container -->
     <?php
-    include_once 'orderWA.php';
-    include_once 'footer.php';
+    include_once '../../orderWA.php';
+    include "../../templates/footer.php";
     ?>
 
 

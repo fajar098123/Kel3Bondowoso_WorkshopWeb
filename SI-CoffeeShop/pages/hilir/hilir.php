@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
 
     <title>Naray Coffee | Coffee Shop</title>
   </head>
   <body>
     <?php
-    include_once 'navbar.php';
+     include "../../config/connection.php";
+     include "../../templates/navbar.php";
     ?>
 <div class="text-center ">
     <div class="card-body">
@@ -28,7 +29,7 @@
     <div class="view_wrap list-view">
         <div class="view_item">
             <div class="vi_left">
-                <img src="img/v60.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/v60.jpg" class="card-img-top" alt="...">
                 </div>
                 <div class="vi_right">
                     <h5 style="text-align:center" class="title">Penyeduhan V60</h5>
@@ -45,7 +46,7 @@
         <div class="view_wrap list-view">
         <div class="view_item">
             <div class="vi_left">
-            <img src="img/vdrip.jpg" class="card-img-top" alt="...">
+            <img src="<?= $_ENV['base_url'] ?>img/vdrip.jpg" class="card-img-top" alt="...">
                 </div>
                 <div class="vi_right">
                     <h5 style="text-align:center" class="title">Penyeduhan Vietnam Drip</h5>
@@ -62,7 +63,7 @@
         <div class="view_wrap list-view">
         <div class="view_item">
             <div class="vi_left">
-            <img src="img/tubruk.jpg" class="card-img-top" alt="...">
+            <img src="<?= $_ENV['base_url'] ?>img/tubruk.jpg" class="card-img-top" alt="...">
                 </div>
                 <div class="vi_right">
                     <h5 style="text-align:center" class="title">Tubruk</h5>
@@ -83,8 +84,8 @@
 </div>
     <!-- end Card -->
     <?php
-    include_once 'orderWA.php';
-    include_once 'footer.php';
+    include_once '../../orderWA.php';
+    include "../../templates/footer.php";
     ?>
 
 

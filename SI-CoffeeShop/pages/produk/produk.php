@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
 
     <title>Naray Coffee | Coffee Shop</title>
   </head>
   <body>
   <?php
-    include_once 'navbar.php';
-    ?>
+     include "../../config/connection.php";
+    include "../../templates/navbar.php";
+  
+ ?>
     <!-- Card -->
     <div class="text-center ">
     <div class="card-body">
@@ -49,7 +51,7 @@
     <div class="row row-cols-1 row-cols-md-3">
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/arabika.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/arabika.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Arabika</h5>
@@ -61,7 +63,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/robusta.jpg" class="card-img-top" alt="">
+                <img src="<?= $_ENV['base_url'] ?>img/robusta.jpg" class="card-img-top" alt="">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Robusta</h5>
@@ -73,7 +75,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/toraja.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/toraja.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Toraja</h5>
@@ -85,7 +87,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/liberika.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/liberika.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Liberika</h5>
@@ -97,7 +99,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/jamaika.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/jamaika.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Jamaika</h5>
@@ -109,7 +111,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/excelsa.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/excelsa.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Excelsa</h5>
@@ -127,7 +129,7 @@
     <div class="row row-cols-1 row-cols-md-3">
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/arabika.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/arabika.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Arabika</h5>
@@ -139,7 +141,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/robusta.jpg" class="card-img-top" alt="">
+                <img src="<?= $_ENV['base_url'] ?>img/robusta.jpg" class="card-img-top" alt="">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Robusta</h5>
@@ -151,7 +153,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/toraja.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/toraja.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Toraja</h5>
@@ -163,7 +165,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/liberika.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/liberika.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Liberika</h5>
@@ -175,7 +177,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/jamaika.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/jamaika.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Jamaika</h5>
@@ -187,7 +189,7 @@
         </div>
         <div class="col mb-4">
             <div class="card h-100">
-                <img src="img/excelsa.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/excelsa.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
                     <h5 class="card-title">Excelsa</h5>
@@ -209,8 +211,8 @@
 
     <!-- end Card -->
     <?php
-    include_once 'orderWA.php';
-    include_once 'footer.php';
+    include_once '../../orderWA.php';
+    include "../../templates/footer.php";
     ?>
 
 
