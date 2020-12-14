@@ -7,6 +7,7 @@ include 'templates/header.php'
     <?php include 'templates/topbar.php' ?>
     <?php include 'templates/sidebar.php' ?>
 
+
                     <div id="layoutSidenav_content">
                     <main>
                     <div class="container-fluid">

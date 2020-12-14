@@ -1,3 +1,4 @@
+<<<<<<< HEAD:SI-CoffeeShop/admin/dist/pages/akun/registrasi.php
 <?php 
 include "../../../../config/connection.php";
 include "../../templates/header.php"
@@ -6,6 +7,16 @@ include "../../templates/header.php"
 <body class="sb-nav-fixed">
     <?php include '../../templates/topbar.php' ?>
     <?php include '../../templates/sidebar.php' ?>
+=======
+<?php include "templates/header.php"?>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+
+>>>>>>> d2c5cd6ca1c2b18ea8271e9805e609529308bae6:coffee_shop/dist/registrasi.php
                 <div id="layoutSidenav_content">
                     <main>
                     <div class="container-fluid">
