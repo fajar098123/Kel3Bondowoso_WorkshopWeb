@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Des 2020 pada 18.59
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.3
+-- Generation Time: Dec 14, 2020 at 09:18 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,19 +24,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_artikel`
+-- Table structure for table `kategori_artikel`
 --
 
-CREATE TABLE `tb_artikel` (
-  `id_artikel` varchar(255) NOT NULL,
-  `nama_artikel` varchar(255) NOT NULL,
-  `gambar` text NOT NULL
+CREATE TABLE `kategori_artikel` (
+  `id_kategori` int(11) NOT NULL,
+  `kategori` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_jeniskopi`
+-- Table structure for table `tb_artikel`
+--
+
+CREATE TABLE `tb_artikel` (
+  `id_artikel` int(11) NOT NULL,
+  `id_kategori` int(11) NOT NULL,
+  `judul_artikel` varchar(255) NOT NULL,
+  `thumbnail` varchar(255) NOT NULL,
+  `konten_artikel` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_jeniskopi`
 --
 
 CREATE TABLE `tb_jeniskopi` (
@@ -46,7 +58,7 @@ CREATE TABLE `tb_jeniskopi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_jeniskopi`
+-- Dumping data for table `tb_jeniskopi`
 --
 
 INSERT INTO `tb_jeniskopi` (`id_jenis_kopi`, `jenis_kopi`) VALUES
@@ -56,7 +68,7 @@ INSERT INTO `tb_jeniskopi` (`id_jenis_kopi`, `jenis_kopi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_jenis_kemasan`
+-- Table structure for table `tb_jenis_kemasan`
 --
 
 CREATE TABLE `tb_jenis_kemasan` (
@@ -65,7 +77,7 @@ CREATE TABLE `tb_jenis_kemasan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_jenis_kemasan`
+-- Dumping data for table `tb_jenis_kemasan`
 --
 
 INSERT INTO `tb_jenis_kemasan` (`id_jenis_kemasan`, `jenis_kemasan`) VALUES
@@ -77,7 +89,7 @@ INSERT INTO `tb_jenis_kemasan` (`id_jenis_kemasan`, `jenis_kemasan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_login`
+-- Table structure for table `tb_login`
 --
 
 CREATE TABLE `tb_login` (
@@ -90,7 +102,7 @@ CREATE TABLE `tb_login` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_produk`
+-- Table structure for table `tb_produk`
 --
 
 CREATE TABLE `tb_produk` (
@@ -108,25 +120,32 @@ CREATE TABLE `tb_produk` (
 --
 
 --
--- Indeks untuk tabel `tb_artikel`
+-- Indexes for table `kategori_artikel`
 --
-ALTER TABLE `tb_artikel`
-  ADD PRIMARY KEY (`id_artikel`);
+ALTER TABLE `kategori_artikel`
+  ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indeks untuk tabel `tb_jeniskopi`
+-- Indexes for table `tb_artikel`
+--
+ALTER TABLE `tb_artikel`
+  ADD PRIMARY KEY (`id_artikel`),
+  ADD KEY `id_kategori` (`id_kategori`);
+
+--
+-- Indexes for table `tb_jeniskopi`
 --
 ALTER TABLE `tb_jeniskopi`
   ADD PRIMARY KEY (`id_jenis_kopi`);
 
 --
--- Indeks untuk tabel `tb_jenis_kemasan`
+-- Indexes for table `tb_jenis_kemasan`
 --
 ALTER TABLE `tb_jenis_kemasan`
   ADD PRIMARY KEY (`id_jenis_kemasan`);
 
 --
--- Indeks untuk tabel `tb_produk`
+-- Indexes for table `tb_produk`
 --
 ALTER TABLE `tb_produk`
   ADD PRIMARY KEY (`kode_kopi`),
@@ -134,27 +153,39 @@ ALTER TABLE `tb_produk`
   ADD KEY `id_jenis_kemasan` (`id_jenis_kemasan`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tb_jeniskopi`
+-- AUTO_INCREMENT for table `kategori_artikel`
+--
+ALTER TABLE `kategori_artikel`
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tb_artikel`
+--
+ALTER TABLE `tb_artikel`
+  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tb_jeniskopi`
 --
 ALTER TABLE `tb_jeniskopi`
   MODIFY `id_jenis_kopi` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_jenis_kemasan`
+-- AUTO_INCREMENT for table `tb_jenis_kemasan`
 --
 ALTER TABLE `tb_jenis_kemasan`
   MODIFY `id_jenis_kemasan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `tb_produk`
+-- Constraints for table `tb_produk`
 --
 ALTER TABLE `tb_produk`
   ADD CONSTRAINT `tb_produk_ibfk_1` FOREIGN KEY (`id_jenis_kopi`) REFERENCES `tb_jeniskopi` (`id_jenis_kopi`),

@@ -27,13 +27,17 @@
                                 Daftar Produk
                             </a>
                             <div class="sb-sidenav-menu-heading">Artikel</div>
-                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/artikel/artikel.php">
+                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/artikel/cms_artikel.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Artikel
+                                Tambah Artikel
                             </a>
-                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/artikel/artikel.php">
+                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/artikel/daftar_artikel.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Daftar Artikel
+                            </a>
+                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/artikel/Kategori_artikel.php">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Kategori Artikel
                             </a>
                         </div>
                         </nav>
