@@ -21,7 +21,7 @@ include "../../templates/header.php"
                 <div class="col-lg-12">
                     <div class="card shadow-lg border-0 rounded-lg ">
                         <div class="card-body">
-                            <form method="post" action="tambah_produk.php">
+                            <form method="post" action="aksi-edit-produk.php">
                                 <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">

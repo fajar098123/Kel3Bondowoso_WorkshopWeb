@@ -6,7 +6,7 @@
                             <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="<?= $_ENV['admin_base_url'] ?>dist/dashboard.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard
+                                Beranda
                             </a>
                             <div class="sb-sidenav-menu-heading">MENU</div>
                             <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/akun/registrasi.php">
@@ -22,7 +22,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Produk
                             </a>
-                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/akun/registrasi.php">
+                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/produk/tabel_produk.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Daftar Produk
                             </a>
