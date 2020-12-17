@@ -21,7 +21,23 @@ include "../../templates/header.php"
                 <div class="col-lg-12">
                     <div class="card shadow-lg border-0 rounded-lg ">
                         <div class="card-body">
-                            <form method="post" action="tambah_produk.php">
+                            <?php
+                                if (isset($_GET['pesan'])){
+                                    $pesan = $_GET['pesan'];
+                                    if($pesan == "berhasil"){
+                                        ?>
+                                        <div class='alert alert-success'>
+                                            <strong>Berhasil</strong>
+                                        </div>
+                                        <?php }
+                                        if($pesan == "gagalgambar"){
+                                            ?>
+                                            <div class='alert alert-danger'>
+                                                <strong>Gagal</strong>
+                                            </div>
+                                        <?php }?>
+                                    <?php }?>
+                            <form method="post" action="tambah_produk.php" enctype="multipart/form-data">
                                 <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">

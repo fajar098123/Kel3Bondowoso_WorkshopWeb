@@ -9,6 +9,7 @@
                                 Beranda
                             </a>
                             <div class="sb-sidenav-menu-heading">MENU</div>
+                            <div class="sb-sidenav-menu-heading">Registrasi</div>
                             <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/akun/registrasi.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Registrasi
@@ -38,6 +39,11 @@
                             <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/artikel/Kategori_artikel.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Kategori Artikel
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Tentang Kami</div>
+                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/tentang_kami/tentang-kami.php">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Tentang Kami
                             </a>
                         </div>
                         </nav>

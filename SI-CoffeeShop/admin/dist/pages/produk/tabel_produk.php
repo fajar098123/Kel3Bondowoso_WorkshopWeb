@@ -20,15 +20,32 @@ include "../../templates/header.php"
                             <li class="breadcrumb-item active">Daftar Produk</li>
                         </ol>
                         <div class="row">
+
                 <div class="col-lg-12">
                     <div class="card shadow-lg border-0 rounded-lg ">
                         
                         <div class="card-body">
-                            
+                            <?php
+                                if (isset($_GET['pesan'])){
+                                    $pesan = $_GET['pesan'];
+                                    if($pesan == "berhasil"){
+                                        ?>
+                                        <div class='alert alert-success'>
+                                            <strong>Berhasil</strong>
+                                        </div>
+                                        <?php }
+                                        if($pesan == "gagal"){
+                                            ?>
+                                            <div class='alert alert-danger'>
+                                                <strong>Gagal</strong>
+                                            </div>
+                                        <?php }?>
+                                    <?php }?>
                                 <div class="table-responsive">
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
+                                                <th>No</th>
                                                 <th>Nama Kopi</th>
                                                 <th>Jenis Kopi</th>
                                                 <th>Harga Kopi</th>
@@ -41,20 +58,21 @@ include "../../templates/header.php"
                                         <tbody>
                                             <?php 
                                                 include "../../../../config/connection.php";
-                                                $query = mysqli_query($mysqli, "SELECT * FROM tb_produk");
-
+                                                $query = mysqli_query($mysqli, "SELECT * FROM `tb_produk` JOIN tb_jeniskopi ON tb_produk.id_jenis_kopi = tb_jeniskopi.id_jenis_kopi JOIN tb_jenis_kemasan ON tb_produk.id_jenis_kemasan = tb_jenis_kemasan.id_jenis_kemasan");
+                                                $no = 1;
                                                 while ($produk = mysqli_fetch_array($query)) {
                                             ?>
                                             <tr>
+                                                <td><?= $no; $no++; ?></td>
                                                 <td><?= $produk['nama_kopi'] ?></td>
-                                                <td><?= $produk['id_jenis_kopi'] ?></td>
+                                                <td><?= $produk['jenis_kopi'] ?></td>
                                                 <td><?= $produk['harga'] ?></td>
-                                                <td><?= $produk['id_jenis_kemasan'] ?></td>
-                                                <td><?= $produk['gambar'] ?></td>
+                                                <td><?= $produk['jenis_kemasan'] ?></td>
+                                                <td><img src="../../../../img/<?= $produk['gambar'] ?>" width="130px" height="130px"></td>
                                                 <td><?= $produk['deskripsi'] ?></td>
                                                 <td>
-                                                    <a type="button" class="btn btn-warning" href="">Edit</a> |
-                                                    <a type="button" class="btn btn-danger" >Hapus</a   >
+                                                    <a type="button" class="btn btn-warning" href="aksi-edit-produk.php?kode=<?php echo $produk['kode_kopi'] ?>">Edit</a> |
+                                                    <a type="button" class="btn btn-danger" href="aksi-hapus-produk.php?kode=<?php echo $produk['kode_kopi'] ?>&gambar=<?= $produk['gambar'] ?>">Hapus</a   >
 
                                                 </td>
                                             </tr>
