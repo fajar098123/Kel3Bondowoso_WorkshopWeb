@@ -15,7 +15,7 @@ include "../../templates/header.php"
                     <div class="container-fluid">
                         <h1 class="mt-4">Produk</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Produk</li>
+                            <li class="breadcrumb-item active">Tambah Produk Produk Baru</li>
                         </ol>
                         <div class="row">
                 <div class="col-lg-12">
@@ -39,7 +39,7 @@ include "../../templates/header.php"
                                     <?php }?>
                             <form method="post" action="tambah_produk.php" enctype="multipart/form-data">
                                 <div class="form-row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                     <label class="small mb-1" for="nama_kopi">Nama Kopi</label>
                                     <input class="form-control" id="nama_kopi" name="nama_kopi" type="text" placeholder="Masukkan Nama Kopi" />
@@ -77,7 +77,7 @@ include "../../templates/header.php"
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1" for="harga">Harga</label>
                                             <input class="form-control py-1" name="harga" id="harga" type="text" placeholder="Masukkan Harga" />
