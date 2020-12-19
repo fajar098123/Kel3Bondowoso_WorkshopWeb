@@ -32,7 +32,7 @@
                                 <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1" for="judul_artikel">Judul Artikel</label>
-                                            <input class="form-control py-4" name="judul_artikel" id="judul_artikel" value="<?php echo $artikel['judul_artikel']?>" type="text" placeholder="Judul Artikel"/>
+                                            <input class="form-control" name="judul_artikel" id="judul_artikel" value="<?php echo $artikel['judul_artikel']?>" type="text" placeholder="Judul Artikel"/>
                                         </div>
                                     </div>
                                     </div>
@@ -40,7 +40,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1" for="kategori_artikel">Kategori Artikel</label>
-                                            <select class="form-control py-4" id="kategori_artikel" name="kategori">
+                                            <select class="form-control" id="kategori_artikel" name="kategori">
                                             <?php 
                                                 $query = mysqli_query($mysqli, "SELECT * FROM kategori_artikel");
 

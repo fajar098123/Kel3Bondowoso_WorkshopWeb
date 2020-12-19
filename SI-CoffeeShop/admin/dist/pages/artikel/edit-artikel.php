@@ -27,7 +27,7 @@ include "../../templates/header.php"
                                 <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1" for="judul_artikel">Judul Artikel</label>
-                                            <input class="form-control py-4" name="judul_artikel" id="judul_artikel" type="text"/>
+                                            <input class="form-control" name="judul_artikel" id="judul_artikel" type="text"/>
                                         </div>
                                     </div>
                                     </div>
@@ -35,7 +35,7 @@ include "../../templates/header.php"
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1" for="kategori_artikel">Kategori Artikel</label>
-                                            <select class="form-control py-4" id="kategori_artikel" name="kategori" placeholder="Kategori Artikel">
+                                            <select class="form-control" id="kategori_artikel" name="kategori" placeholder="Kategori Artikel">
                                             <?php 
                                                 $query = mysqli_query($mysqli, "SELECT * FROM kategori_artikel");
 
