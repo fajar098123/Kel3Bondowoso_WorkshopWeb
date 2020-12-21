@@ -28,7 +28,7 @@
         <a class="nav-link" href="<?= $_ENV['base_url'] ?>pages/hilir/hilir.php">Hilir</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Kontak</a>
+            <a class="nav-link" href="<?= $_ENV['base_url'] ?>pages/kontak/kontak.php">Kontak</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="<?= $_ENV['base_url'] ?>pages/tentang kami/tentang_kami.php">Tentang Kami</a>

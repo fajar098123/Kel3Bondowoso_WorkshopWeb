@@ -34,17 +34,6 @@
         <option value='jamaika'>Jamaika</option>
         <option value='excelsa'>Excelsa</option>
 	  </select>
-      <div class="text-right container">
-    <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-      </div> 
-</div>
 </form>
     </div>
     <div class="container">
