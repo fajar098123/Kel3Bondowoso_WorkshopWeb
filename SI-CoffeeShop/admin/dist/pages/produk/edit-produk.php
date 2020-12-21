@@ -15,7 +15,7 @@ include "../../templates/header.php"
                     <div class="container-fluid">
                         <h1 class="mt-4">Produk</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Produk</li>
+                            <li class="breadcrumb-item active">Edit Produk</li>
                         </ol>
                         <div class="row">
                 <div class="col-lg-12">

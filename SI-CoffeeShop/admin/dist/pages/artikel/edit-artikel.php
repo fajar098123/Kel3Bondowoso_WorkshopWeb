@@ -16,18 +16,18 @@ include "../../templates/header.php"
                     <div class="container-fluid">
                         <h1 class="mt-4">Artikel</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Tambah Artikel Baru</li>
+                            <li class="breadcrumb-item active">Edit Artikel</li>
                         </ol>
                         <div class="row">
                 <div class="col-lg-12">
                     <div class="card shadow-lg border-0 rounded-lg ">
                     <div class="card-body">
-                            <form>
+                            <form method="post" action="aksi-edit-artikel.php">
                                 <div class="form-row">
-                                    <div class="col-md-12">
+                                <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1" for="judul_artikel">Judul Artikel</label>
-                                            <input class="form-control py-4" id="judul_artikel" type="text" placeholder="Judul Artikel"/>
+                                            <input class="form-control" name="judul_artikel" id="judul_artikel" type="text"/>
                                         </div>
                                     </div>
                                     </div>
@@ -35,16 +35,21 @@ include "../../templates/header.php"
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1" for="kategori_artikel">Kategori Artikel</label>
-                                            <select class="form-control py-4" id="kategori_artikel" name="kategori_artikel" placeholder="Kategori Artikel">
-                                            <option value="Arabika" selected>Arabika</option>
-                                            <option value="Robusta">Robusta</option>
+                                            <select class="form-control" id="kategori_artikel" name="kategori" placeholder="Kategori Artikel">
+                                            <?php 
+                                                $query = mysqli_query($mysqli, "SELECT * FROM kategori_artikel");
+
+                                                while($data = mysqli_fetch_array($query)){ 
+                                            ?>
+                                            <option value="<?= $data['id_kategori'] ?>"><?= $data['kategori'] ?></option>
+                                            <?php } ?>
                                             </select>
                                             </div>
                                             <div class="form-row">
                                         <div class="col-md-6">
                                         <label class="small mb-1" for="thumbnail">Thumbnail</label>
                                         </br>
-                                         <input id="thumbnail" type="file" placeholder="Catatan"/>
+                                         <input name= "gambar" id="thumbnail" type="file" placeholder="Catatan"/>
                                         </div>
                                         </div>
                                     </div>
@@ -55,20 +60,20 @@ include "../../templates/header.php"
                                     <div class="form-group">
                                             <label class="small mb-1" for="isi konten">Isi Konten</label>
                                     </div>
-                    <form method="post">
-                        <textarea id="summernote" name="editordata"></textarea>
-                      </form>
-                      </div>
-                        <script>
-                          $(document).ready(function() {
-                              $('#summernote').summernote();
-                          });
-                          $('#summernote').summernote({
-                          lineHeights: ['0.2', '0.3', '0.4', '0.5', '0.6', '0.8', '1.0', '1.2', '1.4', '1.5', '2.0', '3.0']
-                          });
+                                    <div class="card shadow-lg border-0 rounded-lg ">
+                                            <textarea id="summernote" name="editordata"></textarea>
+                                    </div>
+                                <script>
+                                  $(document).ready(function() {
+                                  $('#summernote').summernote();
+                                      });
+                                     $('#summernote').summernote({
+                                     lineHeights: ['0.2', '0.3', '0.4', '0.5', '0.6', '0.8', '1.0', '1.2', '1.4', '1.5', '2.0', '3.0']
+                                         });
                         </script>
                         <div class="col-md-12">
-                        <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="" >Submit</a></div>
+                        <div class="form-group mt-4 mb-0"><button class="btn btn-success btn-block" type="submit">Simpan</button></div>
+                        <div class="form-group mt-4 mb-0"><button class="btn btn-danger btn-block" type="reset" value="reset">Batal</button></div>
                         </div>
                     </div>
                 </div>
