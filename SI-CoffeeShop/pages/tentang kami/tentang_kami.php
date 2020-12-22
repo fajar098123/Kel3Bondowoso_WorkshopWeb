@@ -24,8 +24,22 @@
     <div class="card-body">
     <h5 class="card-title"><u>TENTANG KAMI</u></h5>
     <div class="container">
-    <h1>Ini tentang kami</h1>
-    <!-- isi content -->
+    <?php
+    $q=$mysqli->query("select * from tb_tentangkami");
+		$row=$q->fetch_assoc();
+		    
+		
+		?>
+      <div class="row">
+			<center>
+					<img src="<?php echo "file/".$row['gambar']; ?>" width="100px" height="200px" style="padding-right:10px; margin-left:50px;">
+				</center>
+			<center>
+					<?= $row['artikel']?>
+				</center>
+		
+      </div>
+    
     
        </div>
        </div>

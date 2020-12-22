@@ -21,11 +21,12 @@ include "../../templates/header.php"
                 <div class="col-lg-12">
                     <div class="card shadow-lg border-0 rounded-lg ">
                         <div class="card-body">
+                        <form enctype="multipart/form-data" action="action.php?action=tambah" method="POST">
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="small mb-1" for="harga">Input Gambar</label>
-                                            <input id="harga" type="file" name="gambar" placeholder="Masukkan Harga" />
+                                            <input id="gambar" type="file" name="file" />
                                         </div>
                                     </div>
                                 </div>
@@ -35,7 +36,7 @@ include "../../templates/header.php"
                                             <label class="small mb-1" for="deskripsi">Deskripsi :</label>
                                     </div>
                                     <div class="card shadow-lg border-0 rounded-lg ">
-                                            <textarea id="summernote" name="editordata"></textarea>
+                                            <textarea id="summernote" name="deskripsi"></textarea>
                                     </div>
                                  <script>
                                        $(document).ready(function() {
@@ -49,7 +50,7 @@ include "../../templates/header.php"
                                  </div>
                             </div>
                                 </div>
-                                <div class="form-group mt-4 mb-0"><button class="btn btn-success btn-block" type="submit">Simpan</button></div>
+                                <div class="form-group mt-4 mb-0"><button class="btn btn-success btn-block" name="simpan" type="submit">Simpan</button></div>
                                 <div class="form-group mt-4 mb-0"><button class="btn btn-danger btn-block" type="reset" value="reset">Batal</button></div>
                             </form>
                         </div>
