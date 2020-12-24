@@ -14,10 +14,10 @@ if ($_GET['action']=='tambah') {
             move_uploaded_file($file_tmp, '../../../../pages/tentang kami/file/'.$nama);
             $deskripsi=$_POST['deskripsi'];
             $mysqli->query("INSERT INTO `tb_tentangkami` (`artikel`, `gambar`) VALUES ('$deskripsi', '$nama')");
-            echo "<script>location='http://localhost/Kel3Bondowoso_WorkshopWeb/SI-CoffeeShop/admin/dist/pages/tentang_kami/tentang-kami.php'</script>";
+            echo "<script>alert('Berhasil Di upload'); location='http://localhost/Kel3Bondowoso_WorkshopWeb/SI-CoffeeShop/admin/dist/pages/tentang_kami/tentang-kami.php'</script>";
             
             if($mysqli){
-                echo "<script>location='http://localhost/Kel3Bondowoso_WorkshopWeb/SI-CoffeeShop/admin/dist/pages/tentang_kami/tentang-kami.php'</script>";
+                echo "<script>alert('Berhasil Di upload'); location='http://localhost/Kel3Bondowoso_WorkshopWeb/SI-CoffeeShop/admin/dist/pages/tentang_kami/tentang-kami.php'</script>";
             
             }else{
                 echo 'GAGAL MENGUPLOAD GAMBAR';
