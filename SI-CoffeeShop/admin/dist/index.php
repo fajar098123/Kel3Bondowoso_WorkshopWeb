@@ -20,17 +20,17 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                        <form method="post" action="check-login.php" name="Login">
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputUsername">Username</label>
-                                                <input class="form-control py-4" id="inputUsername" type="Username" placeholder="Username" />
+                                                <input class="form-control py-4" id="inputUsername" name="user" type="Username" placeholder="Username" />
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputPassword">Password</label>
-                                                <input class="form-control py-4" id="inputPassword" type="password" placeholder="Password" />
+                                                <input class="form-control py-4" id="inputPassword" name="pass" type="password" placeholder="Password" />
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="btn btn-primary" href="dashboard.php">Login</a>
+                                            <input type="submit" name="login" class="btn btn-primary btn-block" value="Login">
                                             </div>
                                         </form>
                                     </div>

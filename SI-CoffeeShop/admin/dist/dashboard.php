@@ -1,6 +1,12 @@
 <?php
-include '../../config/connection.php';
-include 'templates/header.php'
+session_start();
+if(empty($_SESSION['userid'])){
+  echo"<script>alert('Anda Harus Login Dulu'); location='index.php'</script>";
+  }
+ 
+  include '../../config/connection.php';
+  include 'templates/header.php';
+  
 ?>
 </head>
 <body class="sb-nav-fixed">
