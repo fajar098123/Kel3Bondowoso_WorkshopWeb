@@ -29,20 +29,30 @@ include "../../templates/header.php"
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="small mb-1" for="id_user">ID User</label>
-                                            <input class="form-control py-4" id="id_user" type="text" placeholder="Masukkan ID User" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
                                             <label class="small mb-1" for="inputNama">Nama</label>
                                             <input class="form-control py-4" id="inputNama" type="text" placeholder="Masukkan Nama" />
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="small mb-1" for="inputTangal">Birthday</label>
+                                            <input class="form-control py-4" type="date" id="inputTangal">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="small mb-1" for="inputUsername">Username</label>
-                                    <input class="form-control py-4" id="inputUsername" type="username" aria-describedby="emailHelp" placeholder="Masukkan Username" />
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="small mb-1" for="inputUsername">Username</label>
+                                            <input class="form-control py-4" id="inputUsername" type="username" aria-describedby="emailHelp" placeholder="Masukkan Username" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="small mb-1" for="inputTelepon">No. Telepon</label>
+                                            <input class="form-control py-4" id="inputTelepon" type="text" placeholder="Masukkan No. Telepon" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-md-6">
