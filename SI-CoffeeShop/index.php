@@ -62,7 +62,7 @@
     </div>
     <div class="text-center my-3">
         <div class="card-body">
-        <h5 class="card-title"><u>BLOG</u></h5>
+        <h5 class="card-title"><u>ARTIKEL</u></h5>
         <div class="text-left container"></div>
         </div>
     </div>
