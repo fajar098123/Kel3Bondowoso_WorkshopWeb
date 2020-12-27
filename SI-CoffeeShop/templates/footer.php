@@ -3,7 +3,7 @@
 
 <!-- Copyright -->
 <div class="footer-copyright text-center py-3 footer-text">© 2020 Copyright:
-<a href="#"class="link-footer"> Kelompok Kita</a>
+    <a class="text-light" href="https://mdbootstrap.com/">MDBootstrap.com</a> by Kelompok Kita
 </div>
 <!-- Copyright -->
 

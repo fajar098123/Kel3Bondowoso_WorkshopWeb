@@ -25,7 +25,7 @@
 <div class="row no-gutters">
   <div class="col-6">
     <label class="mt-3 px-3">Jl.Pakisan, Perum Bataan Permai, B124. Lumbung II, Bataan, Tenggarang, Kabupaten Bondowoso, Jawa Timur 68281</label>
-    <h4 class="text-center text-info">Contact Person</h4>
+    <h4 class="text-center my-3 text-info">Contact Person</h4>
     <div class="m-5 p-3 shadow rounded-lg">
       <h5 class="mt-3 text-success px-3"><i class="fab fa-whatsapp"></i> 0823-3618-2666</h5>
       <h5 class="mt-3 text-danger px-3"><i class="far fa-envelope"></i> naraycoffee@gmail.com</h5>
@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class="col-6 my-5">
-    <h4 class="text-center mt-4 text-success"><i class="fas fa-map-marker-alt"></i> Lokasi Naray Coffee</h4>
+    <h4 class="text-center mt-5 mb-5 text-success"><i class="fas fa-map-marker-alt"></i> Lokasi Naray Coffee</h4>
     <iframe class="shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.65576278646!2d113.8420701227448!3d-7.9309750446403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6c3ffcfdd309f%3A0x2a52e79e76cdf740!2sNaray%20Coffee!5e0!3m2!1sid!2sid!4v1608284309478!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
   </div>
 </div>

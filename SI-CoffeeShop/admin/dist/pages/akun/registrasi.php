@@ -72,9 +72,9 @@ include "../../templates/header.php"
                                 <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="dashboard.php">Kembali</a></div>
                             </form>
                         </div>
+                        <?php include '../../templates/footer.php' ?>
                     </div>
+                    
                 </div>
-                        
-       
-    <x
+            
 </html>
