@@ -40,7 +40,7 @@ include "../../templates/header.php"
                                             </div>
                                         <?php }?>
                                     <?php }?>
-                            <form method="post" action="tambah_akun.php" enctype="multipart/form-data">
+                            <form method="post" action="aksi_edit_akun.php">
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -74,12 +74,12 @@ include "../../templates/header.php"
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="small mb-1" for="inputPassword">Password</label>
-                                            <input class="form-control py-4" id="password" name="password" type="password" placeholder="Password" />
+                                            <input class="form-control py-4" id="pass" name="pass" type="password" placeholder="Password" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group mt-4 mb-0"><button class="btn btn-success btn-block" type="submit">Simpan</button></div>
-                                <div class="form-group mt-4 mb-0"><button class="btn btn-danger btn-block" type="reset" value="reset">Batal</button></div>
+                                <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="" >Masuk</a></div>
+                                <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="dashboard.php">Kembali</a></div>
                             </form>
                         </div>
                         <?php include '../../templates/footer.php' ?>

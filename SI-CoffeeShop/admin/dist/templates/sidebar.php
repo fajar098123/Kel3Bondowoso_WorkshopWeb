@@ -14,7 +14,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Registrasi
                             </a>
-                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/akun/registrasi.php">
+                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/akun/tabel_akun.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Daftar Akun
                             </a>
