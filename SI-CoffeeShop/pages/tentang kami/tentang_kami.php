@@ -32,7 +32,7 @@
 		?>
       <div class="row">
 			<center>
-					<img src="<?php echo "file/".$row['gambar']; ?>" width="100px" height="200px" style="padding-right:10px; margin-left:50px;">
+					<img src="<?php echo "file/".$row['gambar']; ?>" width="400px" height="200px" style="padding-right:50px; margin-left:400px;">
 				</center>
 			<center>
 					<?= $row['artikel']?>

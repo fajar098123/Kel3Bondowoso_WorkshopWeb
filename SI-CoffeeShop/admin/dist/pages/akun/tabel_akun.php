@@ -15,7 +15,7 @@ include "../../templates/header.php"
                 <div id="layoutSidenav_content">
                     <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Artikel</h1>
+                        <h1 class="mt-4">Daftar Akun</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Daftar Akun</li>
                         </ol>
