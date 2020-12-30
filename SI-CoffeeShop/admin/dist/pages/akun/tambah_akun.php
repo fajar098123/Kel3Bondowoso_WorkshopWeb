@@ -12,8 +12,8 @@
         ('".$nama."', '".$username."', '".$password."', '".$email."', '".$telepon."')");
      
     if($query) 
-        header("location:produk.php?pesan=berhasil");
+        header("location:registrasi.php?pesan=berhasil");
     else
-        header("location:produk.php?pesan=gagal");
+        header("location:registrasi.php?pesan=gagal");
 
 ?>

@@ -14,10 +14,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Registrasi
                             </a>
-                            <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/akun/tabel_akun.php">
+                            <!-- <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/akun/tabel_akun.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Daftar Akun
-                            </a>
+                            </a> -->
                             <div class="sb-sidenav-menu-heading">Produk</div>
                             <a class="nav-link collapsed" href="<?= $_ENV['admin_base_url'] ?>dist/pages/produk/produk.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
