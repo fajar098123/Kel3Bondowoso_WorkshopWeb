@@ -18,6 +18,7 @@
      include "../../config/connection.php";
      include "../../templates/navbar.php";
     ?>
+<div class="container mb-5">
 <div class="text-center ">
     <div class="card-body">
     <h5 class="card-title"><u>HILIR</u></h5>
@@ -76,18 +77,14 @@
                 </div>
             </div>
         </div>
-
-    <div class="container">
-    <section class="text-center my-5 p-1">   
-
-    </section>
+    </div>
+    </div>
 </div>
-    <!-- end Card -->
-    <?php
-    include_once '../../orderWA.php';
-    include "../../templates/footer.php";
-    ?>
-
+</div>
+        <?php
+        include_once '../../orderWA.php';
+        include "../../templates/footer.php";
+        ?>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -95,6 +92,7 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

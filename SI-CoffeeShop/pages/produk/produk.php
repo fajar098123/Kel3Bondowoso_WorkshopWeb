@@ -38,166 +38,81 @@
     </div>
     <div class="container">
     <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/arabika.jpg" class="card-img-top" alt="...">
+    <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/arabika-ijen.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Arabika</h5>
-                    <p class="card-text">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
+                    <h5 class="card-title">Arabica Java Ijen (Full Wash)</h5>
+                    <p class="card-text text-right pr-2">50.000</p>
                     <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
         </div> 
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/robusta.jpg" class="card-img-top" alt="">
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/robusta-ijen.jpg" class="card-img-top" alt="">
                 <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Robusta</h5>
-                    <p class="card-text">Robusta sering digambarkan sebagai kopi yang pahit atau tajam dengan karakter rasa seperti kayu dan karet. Pahit atau bitter ini berasal dari kandungan kafein yang lebih tinggi pada Robusta</p>
+                    <h5 class="card-title">Robusta Java Ijen (Full Wash)</h5>
+                    <p class="card-text text-right pr-2">48.000</p>
                     <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/toraja.jpg" class="card-img-top" alt="...">
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/bluemountain.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Toraja</h5>
-                    <p class="card-text">Kopi Toraja adalah jenis kopi Arabica yang disebut “queen of coffe”. Cirinya adalah kopi ini memiliki aroma khas seperti aroma tanah. Rasa pahitnya menonjol.</p>
+                    <h5 class="card-title">Arabica Blue Mountain</h5>
+                    <p class="card-text text-right pr-2">52.500</p>
                     <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/liberika.jpg" class="card-img-top" alt="...">
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/arabica-abyssinia.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Liberika</h5>
-                    <p class="card-text">Kopi liberika memiliki karekteristik khas dan otentik yang dapat membuat para pecinta kopi rindu akan citarasanya.</p>
+                    <h5 class="card-title">Arabica Abyssinia (Natural)</h5>
+                    <p class="card-text text-right pr-2">Rp. 50.000.00</p>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                </div>
+            </div>
+        </div> 
+        </div>
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/arabica-abyssinia-2.jpg" class="card-img-top" alt="">
+                <div class="view_item">
+                <div class="card-body">
+                    <h5 class="card-title">Arabica Abyssinia (Full Wash)</h5>
+                    <p class="card-text text-right pr-2">Rp. 92.000.00</p>
                     <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/jamaika.jpg" class="card-img-top" alt="...">
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/blend119k.jpg" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Jamaika</h5>
-                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
+                    <h5 class="card-title">Blend 119k</h5>
+                    <p class="card-text text-right pr-2">Rp. 46.500.00</p>
                     <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/excelsa.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Excelsa</h5>
-                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
     </div>
-
-    <!-- Card -->
-    <div class="container">
-    <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/arabika.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Arabika</h5>
-                    <p class="card-text">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/robusta.jpg" class="card-img-top" alt="">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Robusta</h5>
-                    <p class="card-text">Robusta sering digambarkan sebagai kopi yang pahit atau tajam dengan karakter rasa seperti kayu dan karet. Pahit atau bitter ini berasal dari kandungan kafein yang lebih tinggi pada Robusta</p>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/toraja.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Toraja</h5>
-                    <p class="card-text">Kopi Toraja adalah jenis kopi Arabica yang disebut “queen of coffe”. Cirinya adalah kopi ini memiliki aroma khas seperti aroma tanah. Rasa pahitnya menonjol.</p>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/liberika.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Liberika</h5>
-                    <p class="card-text">Kopi liberika memiliki karekteristik khas dan otentik yang dapat membuat para pecinta kopi rindu akan citarasanya.</p>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/jamaika.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Jamaika</h5>
-                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="<?= $_ENV['base_url'] ?>img/excelsa.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Excelsa</h5>
-                    <p class="card-text">Jamaican blue mountain memiliki rasa dan aroma yang sangat enak, bahkan mengandung wangi rempah, ditambaah lagi tidak memiliki ras pahit. Bisa dibayangkan sebuah kopi tidak memiliki rasa pahit.</p>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Section: Testimonials v.1 -->
-<div class="container">
-    <section class="text-center my-5 p-1">
-    </section>
 </div>
-<!-- Section: Testimonials v.1 -->
-
     <!-- end Card -->
     <?php
     include_once '../../orderWA.php';

@@ -18,6 +18,7 @@
      include "../../config/connection.php";
     include "../../templates/navbar.php";
     ?>
+<div class="container mb-5">
 <div class="text-center ">
     <div class="card-body">
     <h5 class="card-title"><u>HULU</u></h5>
@@ -26,8 +27,8 @@
     </div>
 </div>
     <!-- Card -->
-    <div class="view-main">
-    <div class="view_wrap list-view">
+        <div class="view-main">
+        <div class="view_wrap list-view">
         <div class="view_item">
             <div class="vi_left">
                 <img src="<?= $_ENV['base_url'] ?>img/sangrai1.jpg" class="card-img-top" alt="...">
@@ -77,11 +78,9 @@
                 </div>
             </div>
         </div>
-
-    <div class="container">
-    <section class="text-center my-5 p-1">   
-
-    </section>
+    </div>
+    </div>
+</div>
 </div>
     <!-- end Card -->
     <?php

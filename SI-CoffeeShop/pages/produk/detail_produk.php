@@ -23,33 +23,33 @@
 <div class="container">
 
   <!-- Portfolio Item Heading -->
-  <h1 class="my-4">Nama Kopi</h1>
+  <h2 class="my-4">Robusta Java Ijen (Full Wash)</h2>
 
   <!-- Portfolio Item Row -->
   <div class="row">
 
     <div class="col-md-6" >
-      <img class="rounded" src="<?= $_ENV['base_url'] ?>img/arabika.jpg" width="500px" alt="">
+      <img class="rounded" src="<?= $_ENV['base_url'] ?>img/robusta-ijen.jpg" width="400px" height="400px" alt="">
     </div>
 
     <div class="col-md-6">
-      <h3 class="my-3">Deskripsi Kopi</h3>
-      <p>Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
-      <h3 class="my-3">Spesifikasi Kopi</h3>
-      <ul>
-        <li>Lorem Ipsum</li>
-        <li>Dolor Sit Amet</li>
-        <li>Consectetur</li>
-        <li>Adipiscing Elit</li>
-      </ul>
-      <h3 class="price">Harga</h3>
+      <div class="spesifikasi">
+      <h4 class="my-3">Detail Kopi</h4>
+        <div class="pr-3">  
+          <p>Jenis Kopi : Robusta</p>
+          <p>Jenis Kemasan : 200g</p>
+        </div>
+        <h4 class="my-4 related">Deskripsi</h4>
+        <p>Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
+        </div>
     </div>
   </div>
+  <h3 class="text-right pr-5">Rp. 48.000.00</h3>
   <!-- /.row -->
 
   <!-- Related Projects Row -->
-  <h3 class="my-4 related">Related Projects</h3>
-
+  <div class="my-5">
+    </div>
   <!-- /.row -->
 
 </div>

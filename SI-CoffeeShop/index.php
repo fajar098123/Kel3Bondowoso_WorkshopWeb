@@ -30,32 +30,41 @@
 
     <!-- Card -->
     <div class="container">
-    <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="img/arabika.jpg" class="card-img-top" alt="...">
+    <div class="row row-cols-2 row-cols-md-3">
+    <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/arabika-ijen.jpg" class="card-img-top" alt="...">
+                <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Arabika</h5>
-                    <p class="card-text">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
+                    <h5 class="card-title">Arabica Java Ijen (Natural)</h5>
+                    <p class="card-text text-right pr-2">Rp. 50.000.00</p>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
+        </div> 
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="img/robusta.jpg" class="card-img-top" alt="">
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/robusta-ijen.jpg" class="card-img-top" alt="">
+                <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Robusta</h5>
-                    <p class="card-text">Robusta sering digambarkan sebagai kopi yang pahit atau tajam dengan karakter rasa seperti kayu dan karet. Pahit atau bitter ini berasal dari kandungan kafein yang lebih tinggi pada Robusta</p>
+                    <h5 class="card-title">Robusta Java Ijen (Full Wash)</h5>
+                    <p class="card-text text-right pr-2">Rp. 48.000.00</p>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
+            </div>
         </div>
-        <div class="col mb-4">
-            <div class="card h-100">
-                <img src="img/toraja.jpg" class="card-img-top" alt="...">
+        <div class="col mb-5">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/bluemountain.jpg" class="card-img-top" alt="...">
+                <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Toraja</h5>
-                    <p class="card-text">Kopi Toraja adalah jenis kopi Arabica yang disebut “queen of coffe”. Cirinya adalah kopi ini memiliki aroma khas seperti aroma tanah. Rasa pahitnya menonjol.</p>
+                    <h5 class="card-title">Arabica Blue Mountain</h5>
+                    <p class="card-text text-right pr-2">Rp. 52.500.00</p>
+                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -66,35 +75,43 @@
         <div class="text-left container"></div>
         </div>
     </div>
-<div class="container">
-    <section class="text-center my-3 p-1">
-    <div class="row no-gutters justify-content-center">
-        <div class="card shadow p-md-4 col-md-10">
-            <div class="row">
-            <div class="col-5">
-            <img src="img/v60.jpg" width="300px" height="200px"class="rounded float-left" alt="...">
+<div class="container mb-5">
+    <div class="view-main ">
+    <div class="view_wrap list-view ">
+    <div class="view_item shadow mb-4">
+        <div class="vi_left">
+            <img src="<?= $_ENV['base_url'] ?>img/v60.jpg" class="card-img-top" alt="...">
             </div>
-            <div class="col-7 my-3 pr-md-5 text-left">
-                <h4>test</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, beatae.</p>
-                <div class="btn tombol float-right"><a href="#">Lihat Detail</a></div>
-            </div>
-            </div>
-        </div>
-        <div class="card shadow p-md-4 col-md-10">
-            <div class="row">
-            <div class="col-5">
-            <img src="img/vdrip.jpg" width="300px" height="200px"class="rounded float-left" alt="...">
-            </div>
-            <div class="col-7 my-3 pr-md-5 text-left">
-                <h4>test</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et tempora ipsum neque quae perspiciatis ipsam ullam asperiores officia eveniet.</p>
-                <div class="btn tombol float-right"><a href="#">Lihat Detail</a></div>
-            </div>
+            <div class="vi_right">
+                <h5 style="text-align:center" class="title">Penyeduhan V60</h5>
+                </br>
+                <p class="content">Bagian 1</p>
+                </br>
+                <p class="content">V60 adalah salah satu cara penyeduhan kopi secara manual dengan menuangkan air ke bubuk kopi yang sudah digiling dengan metode pour over. V60 juga memiliki bentuk yang unik, yaitu menggunakan gelas corong berbentuk V yang memiliki guratan di dalamnya dan juga memakai kertas yang biasa disebut paper filter.</p>
+                </br>
+                <div class="btn">Lihat Detail</div>
             </div>
         </div>
     </div>
-    </section>
+    <div class="view-main">
+        <div class="view_wrap list-view">
+        <div class="view_item shadow mb-4">
+            <div class="vi_left">
+                <img src="<?= $_ENV['base_url'] ?>img/sangrai1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="vi_right">
+                    <h5 class="title">Penyangraian biji kopi</h5>
+                    </br>
+                    <p class="content">Bagian 1</p>
+                    </br>
+                    <p class="content">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
+                    </br>
+                    <div class="btn">Lihat Detail</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
     <!-- end Card -->
     <?php

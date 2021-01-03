@@ -18,6 +18,7 @@
      include "../../config/connection.php";
     include "../../templates/navbar.php";
     ?>
+<div class="container mb-5">
 <div class="text-center ">
     <div class="card-body">
     <h5 class="card-title"><u>HULU</u></h5>
@@ -77,11 +78,9 @@
                 </div>
             </div>
         </div>
-
-    <div class="container">
-    <section class="text-center my-5 p-1">   
-
-    </section>
+</div>
+</div>
+</div>
 </div>
     <!-- end Card -->
     <?php
