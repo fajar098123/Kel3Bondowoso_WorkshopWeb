@@ -45,7 +45,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Arabica Java Ijen (Full Wash)</h5>
                     <p class="card-text text-right pr-2">50.000</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
         </div> 
@@ -57,7 +57,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Robusta Java Ijen (Full Wash)</h5>
                     <p class="card-text text-right pr-2">48.000</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -69,7 +69,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Arabica Blue Mountain</h5>
                     <p class="card-text text-right pr-2">52.500</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -81,7 +81,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Arabica Abyssinia (Natural)</h5>
                     <p class="card-text text-right pr-2">Rp. 50.000.00</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
         </div> 
@@ -93,7 +93,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Arabica Abyssinia (Full Wash)</h5>
                     <p class="card-text text-right pr-2">Rp. 92.000.00</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -105,7 +105,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Blend 119k</h5>
                     <p class="card-text text-right pr-2">Rp. 46.500.00</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>

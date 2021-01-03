@@ -38,7 +38,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Arabica Java Ijen (Natural)</h5>
                     <p class="card-text text-right pr-2">Rp. 50.000.00</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
         </div> 
@@ -50,7 +50,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Robusta Java Ijen (Full Wash)</h5>
                     <p class="card-text text-right pr-2">Rp. 48.000.00</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Arabica Blue Mountain</h5>
                     <p class="card-text text-right pr-2">Rp. 52.500.00</p>
-                    <div class="btn tombol"><a href="detail_produk.php">Lihat Detail</a></div>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
                 </div>
             </div>
             </div>
