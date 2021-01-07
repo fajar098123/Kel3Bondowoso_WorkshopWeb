@@ -24,95 +24,44 @@
     <div class="card-body">
     <h5 class="card-title"><u>PRODUK</u></h5>
     <div class="text-left container">
-    <form>
-      Jenis Kopi :   
-	  <select>
-		<option value='arabika'>Arabika</option>
-		<option value='robusta'>Robusta</option>
-        <option value='toraja'>Toraja</option>
-        <option value='liberika'>Liberika</option>
-        <option value='jamaika'>Jamaika</option>
-        <option value='excelsa'>Excelsa</option>
-	  </select>
+    <form>  
+      <div class="dropdown">
+          <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Pilih Jenis Kopi
+              <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <?php 
+            $query = mysqli_query($mysqli, "SELECT * FROM tb_jeniskopi");
+            while($data = mysqli_fetch_array($query)){ ?>
+            <li class="pl-2"><a href="kategori.php?cat=<?= $data['id_jenis_kopi'] ?>"><?= $data['jenis_kopi'] ?></a></li>
+            <?php } ?>
+          </ul>
+      </div>
 </form>
     </div>
+    <?php 
+    $result = mysqli_query($mysqli, "SELECT * FROM tb_produk");?>
+    <?php while ($data = mysqli_fetch_array($result)) { ?>
     <div class="container">
+    
     <div class="row row-cols-1 row-cols-md-3">
-    <div class="col mb-5">
+    <div class="col mb-4">
             <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/arabika-ijen.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/<?= $data['gambar'] ?>" class="card-img-top" alt="...">
                 <div class="view_item">
                 <div class="card-body">
-                    <h5 class="card-title">Arabica Java Ijen (Full Wash)</h5>
-                    <p class="card-text text-right pr-2">50.000</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
+                    <h5 class="card-title"><?= $data['nama_kopi'] ?></h5>
+                    <p class="card-text text-right pr-2"><?= $data['harga'] ?></p>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php?nama_kopi=<?= str_replace(" ","-",$data['nama_kopi'] ) ?>">Lihat Detail</a></div>
                 </div>
             </div>
         </div> 
-        </div>
-        <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/robusta-ijen.jpg" class="card-img-top" alt="">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Robusta Java Ijen (Full Wash)</h5>
-                    <p class="card-text text-right pr-2">48.000</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/bluemountain.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Arabica Blue Mountain</h5>
-                    <p class="card-text text-right pr-2">52.500</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/arabica-abyssinia.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Arabica Abyssinia (Natural)</h5>
-                    <p class="card-text text-right pr-2">Rp. 50.000.00</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-        </div> 
-        </div>
-        <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/arabica-abyssinia-2.jpg" class="card-img-top" alt="">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Arabica Abyssinia (Full Wash)</h5>
-                    <p class="card-text text-right pr-2">Rp. 92.000.00</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/blend119k.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Blend 119k</h5>
-                    <p class="card-text text-right pr-2">Rp. 46.500.00</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-            </div>
         </div>
     </div>
     </div>
 </div>
+<?php } ?>
     <!-- end Card -->
     <?php
     include_once '../../orderWA.php';

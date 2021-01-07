@@ -10,55 +10,35 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../../style.css">
-    <?php
-    $url = $_GET['nama_kopi'];
-    $nmkopi = str_replace("-"," ",$url);
-    ?>
+
     <title>Naray Coffee | Coffee Shop</title>
   </head>
   <body>
     <?php
-     include "../../config/connection.php";
+    include "../../config/connection.php";
     include "../../templates/navbar.php";
-  
+    ?>
+    <?php
+    $url = $_GET['judul_artikel'];
+    $judul = str_replace("-"," ", $url);
     ?>
 <!-- Page Content -->
 <div class="container">
     <?php 
-    $result = mysqli_query($mysqli, "SELECT tb_produk.nama_kopi, tb_jeniskopi.jenis_kopi, tb_jenis_kemasan.jenis_kemasan, tb_produk.harga, tb_produk.deskripsi, tb_produk.gambar FROM tb_produk JOIN tb_jeniskopi ON tb_produk.id_jenis_kopi=tb_jeniskopi.id_jenis_kopi JOIN tb_jenis_kemasan ON tb_produk.id_jenis_kemasan=tb_jenis_kemasan.id_jenis_kemasan WHERE nama_kopi = '$nmkopi'");
-    $data = mysqli_fetch_array($result);
+    $result = mysqli_query($mysqli, "SELECT * FROM tb_artikel WHERE id_kategori=1 AND judul_artikel = '$judul'");
+
+    while($detail = mysqli_fetch_array($result)){
+        $judul = $detail['judul_artikel'];
+        $thumbnail = $detail['thumbnail'];
+        $konten = $detail['konten_artikel'];
+    }
     ?>
-  <!-- Portfolio Item Heading -->
-  <h2 class="my-4"><?= $data['nama_kopi'] ?></h2>
-
-  <!-- Portfolio Item Row -->
-  <div class="row">
-
-    <div class="col-md-6" >
-      <img class="rounded" src="<?= $_ENV['base_url'] ?>img/<?=$data['gambar']?>" width="400px" height="400px" alt="">
+    <div class="gambar">
+        <img class="" src="<?= $_ENV['base_url'] ?>img/<?= $thumbnail ?>"  height="300px" alt="">
     </div>
-
-    <div class="col-md-6">
-      <div class="spesifikasi">
-      <h4 class="my-3">Detail Kopi</h4>
-        <div class="pr-3">  
-          <p>Jenis Kopi : <?= $data['jenis_kopi'] ?></p>
-          <p>Jenis Kemasan : <?= $data['jenis_kemasan'] ?></p>
-        </div>
-        <h4 class="my-4 related">Deskripsi</h4>
-        <p> <?= $data['deskripsi'] ?> </p>
-        </div>
+    <div class="konten">
+        <p><?= $konten ?></p>
     </div>
-  </div>
-  <hr>
-  <h3 class="text-right pr-5 my-5">Rp. <?= $data['harga'] ?>.00</h3>
-  <!-- /.row -->
-
-  <!-- Related Projects Row -->
-  <!-- <div class="my-5">
-    </div> -->
-  <!-- /.row -->
-
 </div>
 <!-- /.container -->
     <?php

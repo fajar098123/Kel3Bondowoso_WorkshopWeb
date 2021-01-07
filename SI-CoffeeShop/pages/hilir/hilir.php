@@ -18,69 +18,37 @@
      include "../../config/connection.php";
      include "../../templates/navbar.php";
     ?>
-<div class="container mb-5">
-<div class="text-center ">
+    <div class="text-center ">
     <div class="card-body">
     <h5 class="card-title"><u>HILIR</u></h5>
     <div class="text-left container"></div>
     </div>
 </div>
+    <?php 
+    $result = mysqli_query($mysqli, "SELECT * FROM tb_artikel WHERE id_kategori=1");
+    while ($data = mysqli_fetch_array($result)) { ?>
+<div class="container mb-5">  
     <!-- Card -->
     <div class="view-main">
     <div class="view_wrap list-view">
         <div class="view_item">
             <div class="vi_left">
-                <img src="<?= $_ENV['base_url'] ?>img/v60.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/<?= $data['thumbnail'] ?>" class="card-img-top" alt="...">
                 </div>
                 <div class="vi_right">
-                    <h5 style="text-align:center" class="title">Penyeduhan V60</h5>
+                    <h5 style="text-align:center" class="title"><?= $data['judul_artikel']?></h5>
                     </br>
-                    <p class="content">Bagian 1</p>
+                    <p class="content"><?= substr($data['konten_artikel'],0,180) ?> . . .</p>
                     </br>
-                    <p class="content">V60 adalah salah satu cara penyeduhan kopi secara manual dengan menuangkan air ke bubuk kopi yang sudah digiling dengan metode pour over. V60 juga memiliki bentuk yang unik, yaitu menggunakan gelas corong berbentuk V yang memiliki guratan di dalamnya dan juga memakai kertas yang biasa disebut paper filter.</p>
-                    </br>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-        </div>
-        <div class="view-main">
-        <div class="view_wrap list-view">
-        <div class="view_item">
-            <div class="vi_left">
-            <img src="<?= $_ENV['base_url'] ?>img/vdrip.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="vi_right">
-                    <h5 style="text-align:center" class="title">Penyeduhan Vietnam Drip</h5>
-                    </br>
-                    <p class="content">Bagian 2</p>
-                    </br>
-                    <p class="content">Vietnam drip atau V-drip adalah jenis metode yang penyeduhan kopinya menggunakan alat Vietnam drip itu sendiri biasanya metode ini bisa dipadukan dengan susu kental manis dan ada pula original artinya tidak dipadukan dengan susu kental manis.</p>
-                    </br>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-        </div>
-        <div class="view-main">
-        <div class="view_wrap list-view">
-        <div class="view_item">
-            <div class="vi_left">
-            <img src="<?= $_ENV['base_url'] ?>img/tubruk.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="vi_right">
-                    <h5 style="text-align:center" class="title">Tubruk</h5>
-                    </br>
-                    <p class="content">Bagian 3</p>
-                    </br>
-                    <p class="content">Seperti namanya, tubruk intinya adalah cara membuat kopi yang menubrukkan kopi dan air secara langsung. Sederhana! Kopi terendam (dengan metode immersion) dan langsung siap minum. Tahapannya pun singkat.</p>
-                    </br>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn"><a href="detail_hilir.php?judul_artikel=<?= str_replace(" ","-",$data['judul_artikel'] ) ?>"> Lihat Detail </a></div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 </div>
 </div>
+
+<?php } ?>
         <?php
         include_once '../../orderWA.php';
         include "../../templates/footer.php";

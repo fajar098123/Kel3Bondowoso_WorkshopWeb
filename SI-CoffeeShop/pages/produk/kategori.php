@@ -10,62 +10,65 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../../style.css">
-    <?php
-    $url = $_GET['nama_kopi'];
-    $nmkopi = str_replace("-"," ",$url);
-    ?>
+
     <title>Naray Coffee | Coffee Shop</title>
   </head>
   <body>
-    <?php
+  <?php
      include "../../config/connection.php";
     include "../../templates/navbar.php";
-  
-    ?>
-<!-- Page Content -->
-<div class="container">
+ ?>
+ <?php
+    $kat_kopi =$_GET['cat'];
+ ?>
+    <!-- Card -->
+    <div class="text-center ">
+    <div class="card-body">
+    <h5 class="card-title"><u>PRODUK</u></h5>
+    <div class="text-left container">
+    <form>
+    <div class="dropdown">
+          <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Pilih Jenis Kopi
+              <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <?php 
+            $query = mysqli_query($mysqli, "SELECT * FROM tb_jeniskopi");
+            while($data = mysqli_fetch_array($query)){ ?>
+            <li class="pl-2"><a href="kategori.php?cat=<?= $data['id_jenis_kopi'] ?>"><?= $data['jenis_kopi'] ?></a></li>
+            <?php } ?>
+          </ul>
+      </div>
+</form>
+    </div>
     <?php 
-    $result = mysqli_query($mysqli, "SELECT tb_produk.nama_kopi, tb_jeniskopi.jenis_kopi, tb_jenis_kemasan.jenis_kemasan, tb_produk.harga, tb_produk.deskripsi, tb_produk.gambar FROM tb_produk JOIN tb_jeniskopi ON tb_produk.id_jenis_kopi=tb_jeniskopi.id_jenis_kopi JOIN tb_jenis_kemasan ON tb_produk.id_jenis_kemasan=tb_jenis_kemasan.id_jenis_kemasan WHERE nama_kopi = '$nmkopi'");
-    $data = mysqli_fetch_array($result);
-    ?>
-  <!-- Portfolio Item Heading -->
-  <h2 class="my-4"><?= $data['nama_kopi'] ?></h2>
-
-  <!-- Portfolio Item Row -->
-  <div class="row">
-
-    <div class="col-md-6" >
-      <img class="rounded" src="<?= $_ENV['base_url'] ?>img/<?=$data['gambar']?>" width="400px" height="400px" alt="">
-    </div>
-
-    <div class="col-md-6">
-      <div class="spesifikasi">
-      <h4 class="my-3">Detail Kopi</h4>
-        <div class="pr-3">  
-          <p>Jenis Kopi : <?= $data['jenis_kopi'] ?></p>
-          <p>Jenis Kemasan : <?= $data['jenis_kemasan'] ?></p>
-        </div>
-        <h4 class="my-4 related">Deskripsi</h4>
-        <p> <?= $data['deskripsi'] ?> </p>
+    $result = mysqli_query($mysqli, "SELECT tb_produk.*, tb_jeniskopi.jenis_kopi FROM tb_produk,tb_jeniskopi WHERE tb_produk.id_jenis_kopi = tb_jeniskopi.id_jenis_kopi AND tb_produk.id_jenis_kopi = '$kat_kopi'");?>
+    <?php while ($data = mysqli_fetch_array($result)) { ?>
+    <div class="container">
+    
+    <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+            <div class="card shadow">
+                <img src="<?= $_ENV['base_url'] ?>img/<?= $data['gambar'] ?>" class="card-img-top" alt="...">
+                <div class="view_item">
+                <div class="card-body">
+                    <h5 class="card-title"><?= $data['nama_kopi'] ?></h5>
+                    <p class="card-text text-right pr-2"><?= $data['harga'] ?></p>
+                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php?nama_kopi=<?= str_replace(" ","-",$data['nama_kopi'] ) ?>">Lihat Detail</a></div>
+                </div>
+            </div>
+        </div> 
         </div>
     </div>
-  </div>
-  <hr>
-  <h3 class="text-right pr-5 my-5">Rp. <?= $data['harga'] ?>.00</h3>
-  <!-- /.row -->
-
-  <!-- Related Projects Row -->
-  <!-- <div class="my-5">
-    </div> -->
-  <!-- /.row -->
-
+    </div>
 </div>
-<!-- /.container -->
+<?php } ?>
+    <!-- end Card -->
     <?php
     include_once '../../orderWA.php';
     include "../../templates/footer.php";
     ?>
-
 
 
     <!-- Optional JavaScript; choose one of the two! -->
