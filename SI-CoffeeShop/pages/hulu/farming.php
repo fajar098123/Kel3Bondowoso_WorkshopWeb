@@ -18,7 +18,7 @@
      include "../../config/connection.php";
      include "../../templates/navbar.php";
     ?>
-<div class="container mb-5">
+
 <div class="text-center ">
     <div class="card-body">
     <h5 class="card-title"><u>HULU</u></h5>
@@ -26,62 +26,30 @@
     <div class="text-left container"></div>
     </div>
 </div>
+<?php 
+    $result = mysqli_query($mysqli, "SELECT * FROM tb_artikel WHERE id_kategori=2");
+    while ($data = mysqli_fetch_array($result)) { ?>
+<div class="container mb-5">
     <!-- Card -->
     <div class="view-main">
     <div class="view_wrap list-view">
         <div class="view_item">
             <div class="vi_left">
-                <img src="<?= $_ENV['base_url'] ?>img/tumbuhan-kopi1.jpg" class="card-img-top" alt="...">
+                <img src="<?= $_ENV['base_url'] ?>img/<?= $data['thumbnail'] ?>" class="card-img-top" alt="...">
                 </div>
                 <div class="vi_right">
-                    <h5 class="title">Faktor yang mempengaruhi tumbuhan kopi</h5>
+                    <h5 style="text-align:center" class="title"><?= $data['judul_artikel']?></h5>
                     </br>
-                    <p class="content">Bagian 1</p>
+                    <p class="content"><?= substr($data['konten_artikel'],0,180) ?> . . .</p>
                     </br>
-                    <p class="content">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
-                    </br>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-        </div>
-        <div class="view-main">
-        <div class="view_wrap list-view">
-        <div class="view_item">
-            <div class="vi_left">
-            <img src="<?= $_ENV['base_url'] ?>img/tumbuhan-kopi2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="vi_right">
-                    <h5 class="title">Faktor yang mempengaruhi tumbuhan kopi</h5>
-                    </br>
-                    <p class="content">Bagian 2</p>
-                    </br>
-                    <p class="content">Robusta sering digambarkan sebagai kopi yang pahit atau tajam dengan karakter rasa seperti kayu dan karet. Pahit atau bitter ini berasal dari kandungan kafein yang lebih tinggi pada Robusta</p>
-                    </br>
-                    <div class="btn">Lihat Detail</div>
-                </div>
-            </div>
-        </div>
-        <div class="view-main">
-        <div class="view_wrap list-view">
-        <div class="view_item">
-            <div class="vi_left">
-            <img src="<?= $_ENV['base_url'] ?>img/tumbuhan-kopi3.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="vi_right">
-                    <h5 class="title">Faktor yang mempengaruhi tumbuhan kopi</h5>
-                    </br>
-                    <p class="content">Bagian 3</p>
-                    </br>
-                    <p class="content">Kopi Toraja adalah jenis kopi Arabica yang disebut “queen of coffe”. Cirinya adalah kopi ini memiliki aroma khas seperti aroma tanah. Rasa pahitnya menonjol.</p>
-                    </br>
-                    <div class="btn">Lihat Detail</div>
+                    <div class="btn"><a href="detail_hilir.php?judul_artikel=<?= str_replace(" ","-",$data['judul_artikel'] ) ?>"> Lihat Detail </a></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </div>
-</div>
+<?php } ?>
     <!-- end Card -->
     <?php
     include_once '../../orderWA.php';

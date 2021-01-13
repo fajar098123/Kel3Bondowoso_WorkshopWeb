@@ -15,41 +15,32 @@
   </head>
   <body>
     <?php
-     include "../../config/connection.php";
+    include "../../config/connection.php";
     include "../../templates/navbar.php";
     ?>
-<div class="text-center ">
-    <div class="card-body">
-    <h5 class="card-title"><u>HULU</u></h5>
-    <p class="content">Roasting</p>
-    <div class="text-left container"></div>
+    <?php
+    $url = $_GET['judul_artikel'];
+    $judul = str_replace("-"," ", $url);
+    ?>
+<!-- Page Content -->
+<div class="container">
+    <?php 
+    $result = mysqli_query($mysqli, "SELECT * FROM tb_artikel WHERE id_kategori=4 AND judul_artikel = '$judul'");
+
+    while($detail = mysqli_fetch_array($result)){
+        $judul = $detail['judul_artikel'];
+        $thumbnail = $detail['thumbnail'];
+        $konten = $detail['konten_artikel'];
+    }
+    ?>
+    <div class="gambar">
+        <img class="" src="<?= $_ENV['base_url'] ?>img/<?= $thumbnail ?>"  height="300px" alt="">
+    </div>
+    <div class="konten">
+        <p><?= $konten ?></p>
     </div>
 </div>
-<?php 
-    $result = mysqli_query($mysqli, "SELECT * FROM tb_artikel WHERE id_kategori=3");
-    while ($data = mysqli_fetch_array($result)) { ?>
-<div class="container mb-5">
-    <!-- Card -->
-    <div class="view-main">
-    <div class="view_wrap list-view">
-        <div class="view_item">
-            <div class="vi_left">
-                <img src="<?= $_ENV['base_url'] ?>img/<?= $data['thumbnail'] ?>" class="card-img-top" alt="...">
-                </div>
-                <div class="vi_right">
-                    <h5 style="text-align:center" class="title"><?= $data['judul_artikel']?></h5>
-                    </br>
-                    <p class="content"><?= substr($data['konten_artikel'],0,180) ?> . . .</p>
-                    </br>
-                    <div class="btn"><a href="detail_hilir.php?judul_artikel=<?= str_replace(" ","-",$data['judul_artikel'] ) ?>"> Lihat Detail </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<?php } ?>
-    <!-- end Card -->
+<!-- /.container -->
     <?php
     include_once '../../orderWA.php';
     include "../../templates/footer.php";
