@@ -37,7 +37,7 @@ include "../../templates/header.php"
                                             </div>
                                         <?php }?>
                                     <?php }?>
-                            <form method="post" action="tambah_produk.php" enctype="multipart/form-data">
+                            <form method="post" action="tambah_produk.php" enctype="multipart/form-data" autocomplete="off">
                                 <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="form-group">

@@ -42,28 +42,28 @@
       </div>
 </form>
     </div>
-    <?php 
-    $result = mysqli_query($mysqli, "SELECT tb_produk.*, tb_jeniskopi.jenis_kopi FROM tb_produk,tb_jeniskopi WHERE tb_produk.id_jenis_kopi = tb_jeniskopi.id_jenis_kopi AND tb_produk.id_jenis_kopi = '$kat_kopi'");?>
-    <?php while ($data = mysqli_fetch_array($result)) { ?>
-    <div class="container">
     
-    <div class="row row-cols-1 row-cols-md-3">
-    <div class="col mb-4">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/<?= $data['gambar'] ?>" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title"><?= $data['nama_kopi'] ?></h5>
-                    <p class="card-text text-right pr-2"><?= $data['harga'] ?></p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php?nama_kopi=<?= str_replace(" ","-",$data['nama_kopi'] ) ?>">Lihat Detail</a></div>
-                </div>
+    <div class="container">
+    <div class="row">
+    <?php $result = mysqli_query($mysqli, "SELECT tb_produk.*, tb_jeniskopi.jenis_kopi FROM tb_produk,tb_jeniskopi WHERE tb_produk.id_jenis_kopi = tb_jeniskopi.id_jenis_kopi AND tb_produk.id_jenis_kopi = '$kat_kopi'");?>
+    <?php
+    while ($data = mysqli_fetch_array($result)) : ?>
+        <div class="col-md-4">
+        <div class="card h-90">
+        <img class="card-img-top" src="<?php echo $_ENV['base_url'] ?>img/<?= $data['gambar'] ?>" alt="" width="250" height="250">
+            <div class="card-body">
+                <h5 class="card-title"><?= $data['nama_kopi'] ?></h5>
+                <p class="card-text text-right"><?= $data['harga'] ?></p>
             </div>
-        </div> 
+            <div class="card-footer">
+                <a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php?nama_kopi=<?= str_replace(" ","-",$data['nama_kopi'] ) ?>">Lihat Detail</a>
+            </div>
         </div>
+        </div>
+    <?php endwhile ?>
     </div>
     </div>
-</div>
-<?php } ?>
+    </div>
     <!-- end Card -->
     <?php
     include_once '../../orderWA.php';
