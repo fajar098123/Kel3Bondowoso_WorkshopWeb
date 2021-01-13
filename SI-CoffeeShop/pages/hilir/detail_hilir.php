@@ -33,6 +33,8 @@
         $konten = $detail['konten_artikel'];
     }
     ?>
+    <div class="judul title-text my-4"><h2><?= $judul ?></h2></div>
+    <hr>
     <div class="gambar">
         <img class="" src="<?= $_ENV['base_url'] ?>img/<?= $thumbnail ?>"  height="300px" alt="">
     </div>
