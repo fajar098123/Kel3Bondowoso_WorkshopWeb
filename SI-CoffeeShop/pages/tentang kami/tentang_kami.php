@@ -31,12 +31,13 @@
 		
 		?>
       <div class="row">
-			<center>
-					<img src="<?php echo "file/".$row['gambar']; ?>" width="400px" height="200px" style="padding-right:50px; margin-left:400px;">
-				</center>
-			<center>
-					<?= $row['artikel']?>
-				</center>
+        <div class="col-md-6 my-5">
+					<img src="<?php echo "file/".$row['gambar']; ?>" width="400px" height="350px">
+        </div>	
+        <div class="col-md-6 my-5">
+          <?= $row['artikel']?>
+        </div>	
+      </div>
 		
       </div>
     

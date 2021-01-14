@@ -23,7 +23,7 @@
     $judul = str_replace("-"," ", $url);
     ?>
 <!-- Page Content -->
-<div class="container">
+<div class="container my-5">
     <?php 
     $result = mysqli_query($mysqli, "SELECT * FROM tb_artikel WHERE id_kategori=2 AND judul_artikel = '$judul'");
 
@@ -33,6 +33,8 @@
         $konten = $detail['konten_artikel'];
     }
     ?>
+    <div class="judul title-text my-4"><h2><?= $judul ?></h2></div>
+    <hr>
     <div class="gambar">
         <img class="" src="<?= $_ENV['base_url'] ?>img/<?= $thumbnail ?>"  height="300px" alt="">
     </div>

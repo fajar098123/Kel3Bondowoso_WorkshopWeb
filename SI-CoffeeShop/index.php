@@ -30,43 +30,29 @@
 
     <!-- Card -->
     <div class="container">
-    <div class="row row-cols-2 row-cols-md-3">
-    <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/arabika-ijen.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Arabica Java Ijen (Natural)</h5>
-                    <p class="card-text text-right pr-2">Rp. 50.000.00</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-        </div> 
+    <div class="text-center my-3">
+        <div class="card-body">
+        <h5 class="card-title"><u>PRODUK</u></h5>
+        <div class="text-left container"></div>
         </div>
-        <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/robusta-ijen.jpg" class="card-img-top" alt="">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Robusta Java Ijen (Full Wash)</h5>
-                    <p class="card-text text-right pr-2">Rp. 48.000.00</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
+    </div>
+    <div class="row">
+    <?php  $result = mysqli_query($mysqli, "SELECT * FROM tb_produk");?>
+    <?php
+    while ($data = mysqli_fetch_array($result)) : ?>
+        <div class="col-md-4">
+        <div class="card h-90">
+        <img class="card-img-top" src="<?php echo $_ENV['base_url'] ?>img/<?= $data['gambar'] ?>" alt="" width="250" height="250">
+            <div class="card-body">
+                <h5 class="card-title"><?= $data['nama_kopi'] ?></h5>
+                <p class="card-text text-right"><?= $data['harga'] ?></p>
             </div>
+            <div class="card-footer">
+                <a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php?nama_kopi=<?= str_replace(" ","-",$data['nama_kopi'] ) ?>">Lihat Detail</a>
             </div>
         </div>
-        <div class="col mb-5">
-            <div class="card shadow">
-                <img src="<?= $_ENV['base_url'] ?>img/bluemountain.jpg" class="card-img-top" alt="...">
-                <div class="view_item">
-                <div class="card-body">
-                    <h5 class="card-title">Arabica Blue Mountain</h5>
-                    <p class="card-text text-right pr-2">Rp. 52.500.00</p>
-                    <div class="btn tombol"><a href="<?= $_ENV['base_url'] ?>pages/produk/detail_produk.php">Lihat Detail</a></div>
-                </div>
-            </div>
-            </div>
         </div>
+    <?php endwhile ?>
     </div>
     </div>
     <div class="text-center my-3">
@@ -75,42 +61,43 @@
         <div class="text-left container"></div>
         </div>
     </div>
-<div class="container mb-5">
-    <div class="view-main ">
-    <div class="view_wrap list-view ">
-    <div class="view_item shadow mb-4">
-        <div class="vi_left">
-            <img src="<?= $_ENV['base_url'] ?>img/v60.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="vi_right">
-                <h5 style="text-align:center" class="title">Penyeduhan V60</h5>
-                </br>
-                <p class="content">Bagian 1</p>
-                </br>
-                <p class="content">V60 adalah salah satu cara penyeduhan kopi secara manual dengan menuangkan air ke bubuk kopi yang sudah digiling dengan metode pour over. V60 juga memiliki bentuk yang unik, yaitu menggunakan gelas corong berbentuk V yang memiliki guratan di dalamnya dan juga memakai kertas yang biasa disebut paper filter.</p>
-                </br>
-                <div class="btn">Lihat Detail</div>
-            </div>
-        </div>
-    </div>
-    <div class="view-main">
-        <div class="view_wrap list-view">
-        <div class="view_item shadow mb-4">
-            <div class="vi_left">
-                <img src="<?= $_ENV['base_url'] ?>img/sangrai1.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="vi_right">
-                    <h5 class="title">Penyangraian biji kopi</h5>
-                    </br>
-                    <p class="content">Bagian 1</p>
-                    </br>
-                    <p class="content">Kopi Arabica memiliki aroma yang wangi seperti buah-buahan atau bunga-bungaan. Beberapa disertai aroma kacang-kacangan. Rasanya pun lebih halus dan penuh.</p>
-                    </br>
-                    <div class="btn">Lihat Detail</div>
+    <div class="container mb-5">
+        <div class="row">
+            <?php 
+        $x = "";
+        $result = mysqli_query($mysqli, "SELECT *, kategori_artikel.kategori FROM `tb_artikel` JOIN kategori_artikel on kategori_artikel.id_kategori=tb_artikel.id_kategori ORDER BY id_artikel DESC LIMIT 3"); ?>
+        <?php while ($data = mysqli_fetch_array($result)){
+            
+            if ($data['kategori'] == "hilir") {
+                $x = "hilir";
+            }else{
+                $x = 'hulu';
+            }
+            // echo $x;
+        ?> 
+            <div class="col-lg-12">
+                <div class="view-main">
+                    <div class="view_wrap list-view">
+                        <div class="view_item">
+                            <div class="vi_left">
+                                <img src="<?= $_ENV['base_url'] ?>img/<?= $data['thumbnail'] ?>" class="card-img-top" alt="...">
+                            </div>
+                                <div class="vi_right">
+                                    <h5 style="text-align:center" class="title"><?= $data['judul_artikel']?></h5>
+                                    </br>
+                                    <p class="content"><?= substr($data['konten_artikel'],0,180)."..." ?></p>
+                                    </br>
+                                    <div ><a class="btn" href="pages//detail_<?=$data['kategori']?>.php?judul_artikel=<?= str_replace(" ","-",$data['judul_artikel'] ) ?>" class="mb-3"> Lihat Detail </a></div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        <?php } ?>         
         </div>
     </div>
+
+ 
 </div>
 </div>
     <!-- end Card -->

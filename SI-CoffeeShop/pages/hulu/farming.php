@@ -42,7 +42,7 @@
                     </br>
                     <p class="content"><?= substr($data['konten_artikel'],0,180) ?> . . .</p>
                     </br>
-                    <div class="btn"><a href="detail_hilir.php?judul_artikel=<?= str_replace(" ","-",$data['judul_artikel'] ) ?>"> Lihat Detail </a></div>
+                    <div class="btn"><a href="detail_farming.php?judul_artikel=<?= str_replace(" ","-",$data['judul_artikel'] ) ?>"> Lihat Detail </a></div>
                 </div>
             </div>
         </div>
